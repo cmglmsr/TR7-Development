@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TR7</title>
+    <description>TR7 is a cybersecurity company located in Ankara</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>SQL Injection Saldırısı</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/TR7-Website/7.jpeg&quot; alt=&quot;SQL Injection&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;sql-injection-saldırısı&quot;&gt;&lt;strong&gt;SQL Injection Saldırısı&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;SQL Injection Atağı Nedir?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SQL enjeksiyonu, bir saldırganın bir uygulamanın veritabanına yaptığı sorgulara müdahale etmesine olanak tanıyan bir web güvenlik açığıdır. Bu açık saldırganın normalde alamadığı verileri görüntülemesine izin verir. Bu, diğer kullanıcılara ait verileri veya uygulamanın kendisinin erişebildiği diğer verileri içerebilir. Çoğu durumda, bir saldırgan bu verileri değiştirebilir veya silebilir, bu da uygulamanın içeriğinde veya davranışında kalıcı değişikliklere neden olabilir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;SQL Injection Atağı Nasıl Çalışır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SQL, ilişkisel veritabanlarında depolanan verileri yönetmek için tasarlanmış bir sorgu dilidir ve verilere erişmek, değiştirmek ve silmek için kullanabilirsiniz. Birçok web uygulaması ve web sitesi, tüm verilerini SQL veritabanlarında depolar. Ayrıca bazı durumlarda, işletim sistemi komutlarını çalıştırmak için SQL komutlarını da kullanabilirsiniz. Bu yüzden sql injection saldırısı çok kötü sonuçlar doğurabilir.&lt;/p&gt;
+
+&lt;p&gt;SQL injection saldırısı yapmak için, saldırganın önce web sayfası veya web uygulamasında savunmasız kullanıcı bilgilerini(girdilerini) bulması gerekir. SQL injection güvenlik açığı olan bir web sayfası veya web uygulaması, bu tür kullanıcı girişini doğrudan bir SQL sorgusunda kullanır. Saldırgan, girdi içeriği oluşturabilir. Bu tür içerik genellikle kötü amaçlı (malicious payload) yük olarak adlandırılır. Saldırgan bu içeriği gönderdikten sonra, veritabanında kötü amaçlı SQL komutları yürütür.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;SQL Injection Atağı Nasıl Anlaşılır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SQL injection saldırılarını tespit etmek için çeşitli stratejiler bulunmktadır. Bir veritabanı uygulamasının yayın adayı üzerinde gerçekleştirilen testler kümesine penetrasyon testi eklemek, tüm açık saldırı vektörlerinin iyi bir şekilde bağlanıp bağlanmadığını kontrol etmek ve veritabanının girişimleri algılayabilmesini sağlamak için giderek daha yaygın hale geldi. Bu, uygulamanızın ve veritabanınızın saldıra karşı direncini arttırır.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;SQL Injection atak tiplerinden bazıları;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ek sonuçlar döndürmek için bir SQL sorgusunu değiştirebileceğiniz gizli verileri çalma.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Uygulamanın mantığına müdahale etmek için bir sorguyu değiştirebileceğiniz uygulama mantığını tersine çevirme.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Farklı veritabanı tablolarından veri alabileceğiniz union saldırıları.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Veritabanının sürümü ve yapısı hakkında bilgi alabileceğiniz veritabanını incelemek.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Kör sql enjeksiyonu, kontrol ettiğiniz bir sorgunun sonuçlarının uygulamanın yanıtlarında döndürülmemesi.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;SQL Injection Saldırılarından Korunmak&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Kullanıcı girdi(input) kanallarının bu tür saldırılar için ana vektör olduğu düşünüldüğünde, en iyi yaklaşım saldırı modellerini izlemek için kullanıcı girdilerini kontrol etmek ve incelemek. Sql enjeksiyonu önlemek için bazı yöntemler; Giriş doğrulama, parametreleştirilmiş sorgular, depolanmış prosedürler ve kaçış gibi önleme teknikleri, çeşitli saldırı vektörleriyle iyi çalışır. Bununla birlikte, SQL enjeksiyon saldırılarının modelindeki büyük farklılıklardan dolayı genelde veritabanlarını koruyamazlar. Bu nedenle, tüm temelleri kapsamak istiyorsanız, yukarıda belirtilen stratejileri güvenilir bir WAF (Web application firewall) ile uygulamalısınız. WAF’ın birincil avantajı, korumasız kalacak olan özel web uygulamaları için koruma sağlamasıdır.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 Jan 2023 12:00:00 +0300</pubDate>
+        <link>http://localhost:4000/blog/sqlinjection</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/sqlinjection</guid>
+      </item>
+    
+      <item>
+        <title>Zero-day Exploit</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/TR7-Website/15.jpeg&quot; alt=&quot;Zero-day&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;zero-day-exploit&quot;&gt;&lt;strong&gt;Zero-day Exploit&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Zero-day exploit Nedir?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Zero-day exploit yani sıfır gün istismarı, yazılımda bir zayıflığın veya açığın keşfedildiği an meydana gelen bir siber saldırıdır. Bu noktada, yazılımın yaratıcısı tarafından bir düzeltme sunulmadan önce kötüye kullanılır.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Zero-day Exploit Nasıl Çalışır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Başlangıçta, bir kullanıcı bir programda bir güvenlik riski olduğunu keşfettiğinde, bunu yazılım şirketine bildirebilir ve böylece kusur gidermek için bir güvenlik yaması geliştirilir. Programcılar korumasını iyileştiren bir düzeltme oluşturmada hızlıdır fakat, saldırganlar kusuru fark ederse bundan yararlanmak için hızlı davranırlar. Bu olduğunda, bir saldırıya karşı çok az koruma vardır çünkü yazılım kusuru çok yenidir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Zero-day Exploit Örneği&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bir tür zero-day güvenlik açığı olan Stuxnet, kullanılan en eski dijital silahlardan biriydi. Bu kötü niyetli bilgisayar solucanı, İran, Hindistan ve Endonezya gibi birçok ülkede üretim amacıyla kullanılan bilgisayarlara saldırdı. Stuxnet, İran’ın nükleer santrallerini bozan, son derece bulaşıcı, kendi kendini kopyalayan bir bilgisayar solucanıdır. Tehdit bilgisayarların kontrolünü ele geçirdi. Bazı makinelerdeki beklenmedik komutlar gerçekleşmesine ve nükleer malzemeyi ayırmak için kullanılan santrifüjlerin hızını değiştirdi ve kapattı.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Zero-day exploit Saldırılarından Korunmak&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bu tür istismarlardan risk altındaki kuruluşlar, iletilen verileri korumak için sanal yerel alan ağlarını kullanmak, bir güvenlik duvarı kullanarak ve kötü amaçlı yazılım saldırılarına karşı korumak için güvenli bir Wi-Fi sistemi kullanmak dahil olmak üzere çeşitli algılama yöntemlerini kullanabilir. Ayrıca kullanıcılar, işletim sistemlerini ve yazılımlarını güncel tutarak ya da kullanıcı ile site arasında gönderilen bilgilerin güvenliğini sağlayan SSL web sitelerini kullanarak riski en aza indirebilirler.&lt;/p&gt;
+
+&lt;p&gt;Zero-day exploit güvenlik açıkları hakkında hatırlanması gerekenler:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Kendinizi Zero-day exploit saldırısına karşı korumaya yardımcı olmak için yazılım güncel tutulmalıdır.&lt;/li&gt;
+  &lt;li&gt;Zero-day exploit duyurulduğunda bir çözüm aranmalıdır. Çoğu yazılım satıcısı, bir güvenlik açığını düzeltmek için hızlı bir şekilde çalışır.&lt;/li&gt;
+  &lt;li&gt;Bilgisayar korsanları, güvenlik açıklarından yararlanmaya ve cihazlarınıza ve kişisel bilgilerinize erişim sağlamaya çalışacaktır. Bilgilerinizi kimlik hırsızlığı,  - banka dolandırıcılığı ve fidye yazılımı dahil bir dizi siber suç için kullanabilirler.&lt;/li&gt;
+  &lt;li&gt;Cihazlarınızın güvenliğini sağlamak için her zaman bir güvenlik yazılımı kullanın.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 05 Jan 2023 12:00:00 +0300</pubDate>
+        <link>http://localhost:4000/blog/Zero-day_Exploit</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Zero-day_Exploit</guid>
+      </item>
+    
+      <item>
+        <title>XSS Saldırısı</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/TR7-Website/5.jpeg&quot; alt=&quot;XSS&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;xss-saldırısı&quot;&gt;&lt;strong&gt;XSS Saldırısı&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;XSS (Cross-Site Scripting) Atağı Nedir?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Siteler arası komut dosyası çalıştırma (XSS), bir kullanıcının web tarayıcısına girdiği bilgilerin saldırgana gönderilmesine neden olacak saldırı kodunu içeren özel olarak hazırlanmış bir URL’dir. Bir saldırganın, farklı web sitelerini birbirinden ayırmak için tasarlanmış aynı menşe politikasını atlatmasını sağlar. Siteler arası komut dosyası çalıştırma güvenlik açıkları, normalde bir saldırganın kurban gibi görünmesine, kullanıcının gerçekleştirebileceği herhangi bir eylemi gerçekleştirmesine ve kullanıcının herhangi bir verisine erişmesine izin verir. Kurban kullanıcının uygulama içinde ayrıcalıklı erişimi varsa, saldırgan uygulamanın tüm işlevselliği ve verileri üzerinde tam kontrol sahibi olur.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;XSS Atağı Nasıl Çalışır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Siteler arası komut dosyası çalıştırma, savunmasız bir web sitesini kullanıcılara kötü amaçlı JavaScript kodu döndürmesi için manipüle ederek çalışır. Kötü amaçlı kod bir kurbanın tarayıcısında yürütüldüğünde, saldırgan kurbanın uygulamayla etkileşimlerini tehlikeye atabilir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;XSS Atağı Nasıl Anlaşılır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En iyi savunma yöntemi olarak, web sunucularınızdaki her şeyi bir günlüğe kaydetmek ve test ve tespit yöntemleri için ha.ckers.org Cross Site Scripting hile sayfası gibi kaynakları kullanmaktır.&lt;/p&gt;
+
+&lt;p&gt;Bunlarla birlikte, hiçbir şey durum tespiti ve sık sık log temizlemenin yerini alamaz. Sıra dışı bir şey için aranmak gerekir. Sıra dışı olan bir şeyi loglarınızı sık sık kontrol ederek anlayabilirsiniz. Bir XSS saldırısının işareti olan örnek bir web erişim log girişinde aranacak kısım GET// komutudur.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;XSS Atak tiplerinden bazıları;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Kötü amaçlı komut dosyasının mevcut HTTP isteğinden gelen yansıtılan XSS. Uygulama bir HTTP isteğinde veri aldığında ortaya çıkar ve bu verileri güvenli olmayan bir şekilde anında yanıt içine dahil eder.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Kötü amaçlı komut dosyasının web sitesinin veritabanından gelen depolanan XSS. Uygulama güvenilir olmayan bir kaynaktan veri aldığında ortaya çıkar ve bu verileri daha sonraki HTTP yanıtlarına güvenli olmayan bir şekilde dahil eder. Söz konusu veriler, HTTP istekleri aracılığıyla uygulamaya gönderilebilir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Güvenlik açığının sunucu tarafı kodundan ziyade istemci tarafı kodunda olduğu DOM (Document Object Model) tabanlı XSS. Uygulama güvenilmeyen bir kaynaktan verileri güvenli olmayan bir şekilde, genellikle verileri DOM’a yazarak işleyen bazı istemci tarafı JavaScript içerdiğinde ortaya çıkar.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;XSS Saldırılarından Korunmak&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Siteler arası komut dosyası (XSS) saldırılarını önlemek için tek bir standart veya strateji yoktur. XSS saldırılarını önlemenin en iyi bilinen üç uygulaması vardır.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Kaçış: Verilerden kaçmak, bir uygulamanın aldığı verileri alıp son kullanıcı için oluşturmadan önce güvenliğini sağlamak anlamına gelir. Kullanıcı girişinden kaçılarak, bir web sayfası tarafından alınan verilerdeki anahtar karakterlerin kötü niyetli bir şekilde yorumlanması engellenecektir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Giriş doğrulama: Girişin doğrulanması, bir uygulamanın doğru verileri işlemesini sağlama ve kötü niyetli verilerin veri tabanına, web sitesine ve kullanıcılara zarar vermesini önleme sürecidir. Beyaz liste ve giriş doğrulama XSS için ek bir önleme yöntemi olarak da kullanılabilirler. Kara listeye alma veya kullanıcı girdisinde önceden belirlenmiş belirli karakterleri engelleme, yalnızca bilinen kötü karakterlere izin vermezken, beyaz liste yalnızca bilinen iyi karakterlere izin verir ve XSS saldırılarını önlemek için daha iyi bir yöntemdir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Sterilizasyon: Verileri temizlemek güçlü bir savunmadır fakat XSS ataklarıyla savaşmak için yeterli değildir. Kullanıcı girdisinin temizlenmesi özellikle HTML biçimlendirmesine izin veren sitelerde, alınan verilerin potansiyel olarak zararlı biçimlendirmeden verileri temizleyerek ve kabul edilemez kullanıcı girdilerini kabul edilebilir bir biçime değiştirerek hem kullanıcılara hem de veri tabanınıza zarar vermemesini sağlamak için yararlıdır.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 05 Jan 2023 12:00:00 +0300</pubDate>
+        <link>http://localhost:4000/blog/XSS</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/XSS</guid>
+      </item>
+    
+      <item>
+        <title>Spyware</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/TR7-Website/1.jpeg&quot; alt=&quot;SpyWare&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;spyware&quot;&gt;&lt;strong&gt;Spyware&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Spyware Atağı Nedir?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Spyware (casus) yazılım, bir cihazdaki etkinliği gizlice gözlemlemek ve bu gözlemleri bir meraklıya göndermek için tasarlanmış bir kötü amaçlı yazılım sınıfıdır. Bu veriler, çevrimiçi aktivitenizi izlemek için kullanılabilir ve bu bilgiler pazarlamacılara satılabilir. Casus yazılım, birçok amaç için kullanılabilir. Genellikle internet kullanım verilerinizi izlemeyi ve satmayı, kimlik hırsızlığı ve dolandırıcılıkla sonuçlanabilecek hesap parolaları ve kredi kartı numaraları gibi kişisel bilgileri çalmayı amaçlar.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Spyware Atağı Nasıl Çalışır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Spyware yazılımlar çeşitli şekillerde dağıtılır. En yaygın olan yazılım türü, kullanıcıların kötü niyetli bir web sitesine yönlendiren bir bağlantıya tıklamalarını sağlamaktır. Bu kötü amaçlı bağlantılar e-postalarda, metin mesajlarında, bir tarayıcıdaki açılır pencerelerde ve web sayfalarındaki reklamlarda olabilir. Virüslü bağlantıların Google arama sonuçlarında da göründüğü bilinmektedir.&lt;/p&gt;
+
+&lt;p&gt;Bazen virüslü bir web sitesine gitmek için sadece kötü amaçlı bir bağlantıya tıklamanız gerekmez. Bu, meşru web sitelerine verilen virüslü reklam yoluyla yapılır. Bazen, saldırganlar yasal web sitelerine kötü amaçlı kod yerleştirerek ziyaretçiye yalnızca bir sayfaya tıklamalarıyla bile bulaşabilir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Spyware Atağı Nasıl Anlaşılır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Spyware yazılımların cihazınızda anlaşılması zor olabilir. Doğası gereği aldatıcı olması ve bulunması zor olması gerekiyor. Fakat spyware yazılımdan etkilenip etkilenmediğinizi anlamanıza yardımcı olabilecek bazı ipuçları var. Eğer bilgisayarınızda bu belirtileri görüyorsanız casus yazılım sorununuz olabilir. Bunlar; cihazınız yavaşlaması ve beklenmedik zamanlarda çökmesi, cihazınızın sabit disk alanının bitmesi ve çevrimiçi veya çevrimdışı olduğunuzda açılır pencereler görünmesidir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Spyware atak tiplerinden bazıları;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Reklam yazılımı: Çevrimiçi etkinliklerinize bakar ve bu bilgilere dayanarak ilgileneceğinizi düşündüğü reklamları görüntüler. Diğer bazı casus yazılım tipleriyle karşılaştırıldığı zaman iyi huylu olsa da reklam yazılımları bir aygıtın performansını etkileyebileceği gibi rahatsız edici de olabilir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Truva atları: Bir cihaza yazılımın içinde gizli bir şekilde indikten sonra, banka hesabı bilgileri gibi hassas bilgileri alır ve bunları para çalmak, hesapları tehlikeye atmak veya satın alımlar yapmak için kullanacak olan üçüncü tarafa gönderirler. Ayrıca, bir uzaktan erişim Truva Atı (Trojan) kurulumu yoluyla bir bilgisayarın kontrolünü ele geçirmek için kullanılabilirler.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Hırsızlık Yazılımı: Uygulama sayfalarına trafik gönderen web sitelerine kredi veren çevrimiçi alışveriş sitelerinden yararlanmak amacıyla tasarlanmıştır. Bir kullanıcı bu sitelerden birine gittiğinde, hırsızlık yazılımı isteği durdurur ve kullanıcıyı oraya göndermek için sorumluluk alır.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Sistem monitörleri: Tuş vuruşlarından, e-postalara ve sohbet odası iletişim kutularından ziyaret edilen web sitelerine, başlatılan programlara ve yapılan telefon görüşmelerine kadar bir cihazda olan her şeyi kaydeder ve bir meraklı veya siber suçluya gönderir. Ayrıca bir sistemin süreçlerini izleyebilir ve sistemdeki güvenlik açıklarını belirleyebilirler.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Spyware Saldırılarından Korunmak&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Spyware saldırılarını önlemek için ana yöntemler bulunmaktadır. Bunlardan bazıları aşağıda gösterilmiştir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bilinmeyen gönderenlerden gelen e-postaları açmamak.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Güvenilir olmayan kaynaklardan dosya indirmemek.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Açılır reklamlara tıklamamak.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Saygın bir antivirüs yazılımı kullanın.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Spyware yazılım zararlı olabilir, ancak dikkatli olunarak ve düzgün bir virüsten koruma aracı kullanılarak kaldırılabilir ve/veya önlenebilir. Eğer bir casus yazılım cihazınıza bulaşmışsa yazılımı kaldırmak için bazı adımlar atın. Parolalarınızı değiştirmek ve sahtekarlık faaliyetlerini izlemesi için bankanızı bilgilendirmek proaktif olarak korunmanızı sağlayabilirsiniz.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 Jan 2023 12:00:00 +0300</pubDate>
+        <link>http://localhost:4000/blog/SpyWare</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/SpyWare</guid>
+      </item>
+    
+      <item>
+        <title>Spoofing Saldırısı</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/TR7-Website/8.jpeg&quot; alt=&quot;SQL Injection&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;spoofing-saldırısı&quot;&gt;&lt;strong&gt;Spoofing Saldırısı&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Spoofing Atağı Nedir?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bilgi ve network güvenliği, bir kişinin veya programın yasadışı yollarla verileri saptırarak başka bir kimlik olarak tanımlandığı bir durumdur. Adres sahteciliği, kullanıcıya zararlı bir şey yapmasını sağlamak için güvenilir bir kullanıcı veya cihaz kılığına sokan davranış türüdür.&lt;/p&gt;
+
+&lt;p&gt;Adres sahteciliği saldırıları, kimlik avı kampanyalarında kullanılan yaygın e-posta sahtekarlığı saldırılarından, genellikle dolandırıcılık yapmak için kullanılan arayan kimliği sahtekarlığı saldırılarına kadar pek çok biçimde olabilir. Saldırganlar ayrıca bir kimlik sahtekarlığı saldırısının parçası olarak bir kuruluşun ağının IP adresi, etki alanı adı sistemi (DNS) sunucusu veya Adres Çözümleme Protokolü (ARP) hizmeti gibi daha teknik unsurlarını hedefleyebilir.&lt;/p&gt;
+
+&lt;p&gt;Adres sahteciliği saldırıları genellikle, kurbanın tanıdığı kişi ya da bir kuruluşu taklit ederek yapılır. E-posta sahtekarlığı veya web sitesi sahtekarlığı içeren balina kimlik ağı saldırıları gibi bazı durumlarda , bu mesajlar, söz konusu kişiyi iletişimin meşru olduğuna ikna etmek için kurbana kişiselleştirilebilir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Spoofing Atağı Nasıl Çalışır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;İnternette bazı arka planlar vardır. İlk olarak internet üzerinden iletilen veriler paketlere dağıtılır ve bu paketler birbirinden bağımsız olarak iletilir son olarak paketler tekrar birleşir. Her bir paketin, kaynak ve hedef IP adresi dahil olmak üzere kendi IP (internet protokolü) adresi vardır.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Spoofing Atağı Nasıl Anlaşılır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bir spoofing atağını engellemenin en iyi yolu kullanıcı eğitimi tarafındaki sahtekarlığa maruz kaldığınıza dair işaretlere dikkat etmektir. Örneğin, e-posta adres sahteciliği kullanan bir kimlik avı saldırısı, alışılmadık dilbilgisi, kötü yazım veya garip bir dil içerebilir. Ayrıca, daha ayrıntılı bir incelenirse, gönderenin e-posta adresinin bir harf farklı olduğunu veya mesajda yer alan URL’nin olması gerekenden biraz farklı bir yazılışı olduğunu fark edebilirsiniz. E-posta, metin veya başka bir kanal yoluyla gelen, sahte bir mesaj olduğundan şüphelenilen, mesajdaki bağlantıların veya eklerin hiçbirine tıklamamak gerekir. Sınıfının en iyisi bir olay algılama ve müdahale çözümü, anormal kullanıcı aktivitesinin tespit edilmesi durumunda sizi proaktif olarak bilgilendirerek kuruluşunuzu daha da koruyabilir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Spoofing atak tiplerinden bazıları;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;IP sahtekarlığında, saldırganın sahte IP adresli mesajlar göndererek, mesajın aynı dahili bilgisayar ağındaki gibi güvenilir bir kaynaktan geliyormuş gibi görünmesini sağlamak için sisteme yetkisiz erişim sağlamaya çalışmasını içerir.&lt;/p&gt;
+
+&lt;p&gt;Web sitesi sahtekarlığında, bir browserı ele geçiren bir korsan yazılımcı, ziyaretçilerini yasal bir web sitesine benzeyen bir siteye yönlendirir. Bu saldırgan sonradan ziyaretçilerin kişisel ve ödeme bilgilerini çalmasıdır.&lt;/p&gt;
+
+&lt;p&gt;E-posta sahtekarlığında, e-postalar müşteriler, iş arkadaşları gibi güvenilir kişilerden geliyor gibi görünür fakat bunlar aslında gerçekleştirmenizi istedikleri eylemde yardımınızı almak için kasıtlı olarak kendilerini gizleyen siber suçlulardan gelir. Bu e-postalar talep, para transferi veya bir sisteme erişim izni içeriyor olabilir. Ayrıca, sahte e-postalar bazen açıldığında Trojans (Truva atları) veya virüsler gibi kötü amaçlı yazılım yükleyen ekler içerebilir. Bu durumda, bu yazılım lar bilgisayarınıza bulaşmanın ötesine geçecek ve tüm ağınıza yayılacak şekilde tasarlanmıştır.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Spoofing Saldırılarından Korunmak&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Siber suçlara karşı savunmanın çoğu yönünde olduğu gibi, kendini korumanın temel ilkesi farkındalıktır. Özellikle de sanal dünyada korunmak çok önemli olabilir.&lt;/p&gt;
+
+&lt;p&gt;Akıllı güvenlik araçları, sahtekarlık saldırılarını önlemenize yardımcı olabilir. Örneğin, bir spam filtresi, kimlik avı e-postalarının çoğunun kişinin gelen kutusuna ulaşmasını engeller. Bazı kuruluşlar ve bazı network taşıyıcıları, kullanıcıların telefonlarına ulaşmasını engellemek için benzer yazılımlar kullanır. Adres sahteciliği algılama yazılımı, bazı sahtekarlık saldırılarına karşı ek koruma sağlayabilir ve herhangi bir zarar verme şansı bulamadan bunları tespit etme ve engelleme yeteneğinizi geliştirir.&lt;/p&gt;
+
+&lt;p&gt;Bazı iyi uygulamalar, bir spoofing saldırısına gitme şansınızı da azaltabilir. Mümkün olduğunca ağınızda kimlik doğrulama için güven ilişkilerine güvenmekten kaçınmalısınız. Aksi takdirde saldırganlar, başarılı spoofing saldırıları yapmak için bu ilişkilerinizden yararlanabil ir. Paket filtreleme, çakışan kaynak adresi bilgileri içeren paketleri filtreleyebildiği ve engelleyebildiği için IP sahtekarlığı saldırısını önleyebilir. HTTP Secure (HTTPS) ve Secure Shell (SSH) gibi kriptografik ağ protokolleri kullanarak ortamınıza başka bir koruma katmanı ekleyebilirsiniz. Ayrıca, Güçlü bir internet güvenliği yazılımı, sizi sahte sitelerden koruyabilir ve sisteminize sızmaya çalışan kötü amaçlı yazılımları ortadan kaldırabilir.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 Jan 2023 12:00:00 +0300</pubDate>
+        <link>http://localhost:4000/blog/Spoofing</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Spoofing</guid>
+      </item>
+    
+      <item>
+        <title>Session Hijacking</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/TR7-Website/10.jpeg&quot; alt=&quot;Session Hijacking&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;session-hijacking&quot;&gt;&lt;strong&gt;Session Hijacking&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Session Hijacking saldırısı nedir?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Session Hijacking (oturum ele geçirme), bir kullanıcı oturumunun bir saldırgan tarafından ele geçirildiği bir saldırı türüdür. Bir oturum, örneğin bir uygulama hizmetine oturum açıldığında başlar ve oturum kapatıldığında sona erer. Saldırganın oturum çereziniz hakkında bilgi sahibi olma durumuna göre, saldırı, aynı zamanda çerez kaçırma veya çerez yan saldırısı olarak da adlandırılır. Bazen herhangi bir bilgisayar oturumu ele geçirilmesine rağmen, Session Hijacking en yaygın olarak tarayıcı oturumları ve web uygulamaları için geçerlidir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Session Hijacking Saldırısı Nasıl Çalışır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Session Hijacking, bir saldırgan, çoğu web sitesinde bir oturumu sürdürmek için kullanılan HTTP çerezlerini çalarak tehlikeye atılmış bir etkin oturumdan yararlanmasıyla gerçekleşir. Başka bir yol ise saldırganın belirli bir kullanıcının kimlik bilgilerini kullandığından, uzak bir web sunucusundaki bilgilere yetkisiz erişim elde etmek için etkin bir oturumun tahmin etmesidir. Oturum belirteci veya HTTP başlığının güvenliği manipıle edilebilir ve bunlar oturum koklama (Session Sniffing) ve siteler arası komut dosyası çalıştırma (XSS) saldırılarını içerir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Session Hijacking Saldırısı Nasıl Anlaşılır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Saldırgan sistemdeki varlığına dikkat çekmedikçe, oturum kaçırmanın çoğu zaman fark edilmesi zordur. Kullanıcı, bir saldırı sırasında birkaç belirti fark edebilir. Örneğin, istemci uygulama oturumu yani Telnet yanıt vermiyor veya donuyor. Başka bir belirti ise bilgisayarı yavaşlatan kısa süreli bir ağ etkinliğidir.&lt;/p&gt;
+
+&lt;p&gt;Diğer bir yaygın belirti, istemci uygulamasının bir süre askıda kalmasıdır, çünkü sunucuya veri gönderen saldırganla rekabet etme durumu vardır. Bu, programın kafasının karışmasına ve 4. Katmandan bir yanıt beklemesine neden olur. Bununla birlikte, normal ve hatta ileri düzey bilgisayar kullanıcıları bu belirtileri nadiren rapor ederler çünkü sorunlar uygulamaların çökmesi, meşgul sunucular veya ağır yük bırakan bağlantılar altındaki bir ağ gibi diğer yaygın sorunlara çok benzer&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Nasıl Korunur?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;DNS tünellemeye karşı koruma, bu girişimde bulunulan veri hırsızlığını algılayabilen ve engelleyebilen gelişmiş bir ağ tehdidi önleme sistemini ve böyle bir sistemin ağ trafiğinin denetlemesi ve kötü amaçlı ataklara yönelik trafiğin ve DNS trafiğine gömülebilecek kötü amaçlı içeriğin tanımlanmasını gerektirir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Session Hijacking atak tiplerinden bazıları;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;İki ana Session Hijacking türü vardır. Bunlar, Uygulama Katmanı Korsanlığı ve Taşıma Katmanı Korsanlığıdır.  Uygulama katmanı ele geçirmede, bir saldırgan, bir oturumu ele geçirmek için gereken oturum kimliğini çalar veya başarıyla tahmin eder. Bu tür oturum kaçırma, esas olarak HTTP kullanan oturumlarda ortaya çıkar. İki Uygulama Katmanı Saldırısı örneği, Man in the Middle ve bir proxy kullanan saldırıları içerir. Öte yandan, proxy saldırıları, bir saldırgan, ağ trafiğinin kendi kurduğu bir proxy üzerinden geçmesine neden olarak işlem sırasında oturum kimliğini yakaladığında meydana gelir. Taşıma Katmanı ele geçirme, TCP oturumlarında meydana gelir ve saldırganın istemci ile sunucu arasındaki iletişim kanalını veri alışverişi yapılamayacak şekilde kesintiye uğratır. Böylece korsan istemciye ve sunucuya meşru görünen hileli veri paketleri gönderebilir yani esasen oturumu devralabilir. IP spoofing, sayesinde, korsan, ağdaki bilgisayarlarla iletişim kurabilir. Blind Hijacking, bir saldırganın bir oturum sırasında iletişimi kesip kendi kötü amaçlı verilerini ya da komutlarını gönderdiği bir saldırıdır.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Session Hijacking Saldırılarından Korunmak&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tüm oturum trafiğinin SSL / TLS şifrelemesini sağlamak için HTTPS kullanmak. Bu, korsan kullanıcının trafiğini izliyor olsa bile düz metin oturum kimliğine müdahale edememesini sağlar. Tüm bağlantıların şifrelenmesini garanti etmek için HSTS’i (HTTP Katı Taşıma Güvenliği) kullanmak daha fazla güvenlik sağlar.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;İstemci tarafı komut dosyalarından tanımlama bilgilerine erişimi önlemek HttpOnlyiçin Set-CookieHTTP başlığını kullanarak özniteliği ayarlayın. Bu, XSS’yi ve tarayıcıya JavaScript enjekte etmeye dayanan diğer saldırıları önler. Ek güvenlik için Secureve SameSitedirektiflerinin belirtilmesi de önerilir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Web sunucuları, uzun ve rastgele oturum tanımlama bilgileri oluşturabilir, bu da rakip bir tanımlama bilgisinin ne olabileceğini tahmin etme şansını azaltır.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Oturum kimliğine yetkisiz erişimi engelleyen kullanıcının tarayıcısı ile web sunucusu arasında uçtan uca şifreleme yapmak. VPN’ler, kişisel VPN çözüm araçlarını kullanarak yalnızca web sunucusuna gelen trafiği değil, her şeyi şifrelemek için de kullanılabilir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bir oturum sona erdiğinde otomatik bir oturum kapatma olmalıdır ve ayrıca, kullanıcının farklı bir oturum kimliği kullanarak yeniden kimlik doğrulaması yapması istenmelidir.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 05 Jan 2023 12:00:00 +0300</pubDate>
+        <link>http://localhost:4000/blog/Session_Hijacking</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Session_Hijacking</guid>
+      </item>
+    
+      <item>
+        <title>Ping Of Death Atağı</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/TR7-Website/13.jpeg&quot; alt=&quot;Ping Of Death&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;ping-of-death-atağı&quot;&gt;&lt;strong&gt;Ping Of Death Atağı&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Ping of Death Atağı Nedir?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ölüm Pingi (diğer adıyla PoD), bir saldırganın basit bir ping komutu kullanarak hatalı biçimlendirilmiş veya büyük boyutlu paketler göndererek hedeflenen bilgisayarı veya hizmeti çökertmeye, kararsız hale getirmeye veya dondurmaya çalıştığı bir Hizmet Reddi (DoS) saldırısı türüdür.&lt;/p&gt;
+
+&lt;p&gt;İnternet Kontrol Mesajı Protokolü (ICMP) yankı yanıtı mesajı, “ping”, bir ağ bağlantısını test etmek için kullanılan bir yöntemdir. İstek gönderildikten sonra eğer bağlantı çalışıyorsa, kaynak makine hedeflenen makineden bir yanıt alır.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Ping of Death Atağı Nasıl Çalışır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bazı ping paketleri çok küçük olsa bile, IP4 ping paketleri çok daha büyüktür ve maksimum paket boyutu olan 65.535 bayt kadar olabilmektedir. Bazı TCP / IP sistemleri hiçbir zaman maksimumdan daha büyük paketleri işleyecek şekilde tasarlanmamıştır, bu durum da onları bu boyutun üzerindeki paketlere karşı savunmasız hale getirmektedir.&lt;/p&gt;
+
+&lt;p&gt;Kötü niyetli olarak büyük bir paket saldırgandan hedefe iletildiğinde, paket her biri maksimum boyut sınırının altında olan segmentlere bölünür. Hedef makine parçaları bir araya getirmeye çalıştığında, toplam boyut sınırını aşar ve bir arabellek taşması meydana gelebilir, bu da hedef makinenin donmasına, çökmesine veya yeniden başlamasına neden olur.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Ping of Death Saldırılarından Korunmak&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bir saldırıyı durdurmanın tek çözümü, paketlerin yeniden birleştirilmesinden sonra paket boyutunun aşılmayacağından emin olmak için yeniden birleştirme sürecine kontroller eklemektir.&lt;/p&gt;
+
+&lt;p&gt;Diğer bir çözüm, maksimum değeri aşan paketleri işlemek için yeterli alana sahip bir bellek tamponu oluşturmaktır.&lt;/p&gt;
+
+&lt;p&gt;1998’den sonra oluşturulan cihazlar genellikle bu tür saldırılara karşı korunmaktadır fakat bazı eski ekipmanlar hala savunmasız olabilmektedirler. Microsoft Windows için IPv6 paketlerine yönelik yeni bir Ölüm Pingi saldırısı daha yakın zamanda keşfedilmiş ve 2013 ortalarında düzeltilmiştir.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 Jan 2023 12:00:00 +0300</pubDate>
+        <link>http://localhost:4000/blog/Ping_Of_Death</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Ping_Of_Death</guid>
+      </item>
+    
+      <item>
+        <title>Phishing Atağı</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/TR7-Website/11.jpeg&quot; alt=&quot;Phishing&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;phishing-atağı&quot;&gt;&lt;strong&gt;Phishing Atağı&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Phishing Atağı Nedir?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Phishing saldırı yani Türkçe haliyle kimlik avı saldırısı, genellikle oturum açma kimlik bilgileri ve kredi kartı numaraları dahil olmak üzere kullanıcı verilerini çalmak için kullanılan bir tür siber saldırısıdır. Güvenilir bir varlık kılığına giren bir saldırganın amacı, kullanıcıyı kandırarak bir e-posta veya anlık mesaj atarak ortaya çıkar. Kullanıcı kötü amaçlı bir bağlantıya tıklaması için kandırılır, bu da kötü amaçlı yazılımın yüklenmesine, bu da sistemin donmasına veya hassas bilgilerin ele geçirilmesine neden olabilir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Phishing Atağı Nasıl Çalışır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Kimlik avı saldırını anlamanın sağlayan şey, mesajın aldığı biçimdir: korsanlar, bir tür güvenilir varlık, genellikle gerçek güvenilir bir kişi veya kurbanın iş yapabileceği bir şirket gibi davranır. Böylece, saldırgan kurbanları kandırarak, e-posta veya kısa mesaj gibi kötü amaçlı yazılımlarla onların sistemlerinin çökmesine ve verilerinin açığa çıkmasına sebebiyet verir. Bu, çok eski zamanlara dayanan siber saldırı türlerinden biridir ve kimlik avı mesajları ve tekniklerinin giderek daha karmaşık hale gelmesiyle hala en yaygın ve zararlı olanlardan biridir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Phishing Atağı Nasıl Anlaşılır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Mesaj, genel bir e-posta alan adından gönderilmiştir. Hiçbir meşru kuruluş, ‘@ gmail.com’ ile biten bir adresten e-posta göndermez. Bazı küçük işlemler dışında çoğu kuruluşun kendi e-posta etki alanı ve şirket hesapları olacaktır. Örneğin, Google’dan gelen yasal e-postalarda “@ google.com” yazar. Etki alanı adı (@ sembolünden sonraki bit) e-postanın görünen göndericisiyle eşleşiyorsa, mesaj muhtemelen meşrudur. Önemli ipucu: Yalnızca gönderene değil, e-posta adresine de bakılması gereklidir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Phishing atak tiplerinden bazıları;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;E-posta kimlik avı: Kimlik avı saldırılarının çoğu e-posta ile gönderilir. Dolandırıcı, gerçek bir organizasyonu taklit eden ve binlerce genel istek gönderen sahte bir alan adı oluşturur.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Hedefli kimlik ağı: E-postayı içeren daha karmaşık iki kimlik avı türü daha vardır. İlki, hedefli kimlik avı, belirli bir kişiye gönderilen kötü amaçlı e-postaları tanımlar. Saldırganlar, kurban hakkındaki bilgilerin bir kısmını veya tamamını ele geçirir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Balina avı: Balina avı saldırıları üst düzey yöneticileri hedef alır. Balina avının nihai amacı diğer herhangi bir kimlik avı saldırısı ile aynıdır fakat, teknik çok daha inceliklidir. Sahte vergi iadelerini içeren dolandırıcılıklar, giderek yaygınlaşan bir balina avı türüdür. Adlar, adresler, Sosyal Güvenlik numaraları ve banka hesabı bilgileri gibi birçok yararlı bilgi içerdikleri için vergi formları saldırganlar tarafından oldukça değerlidir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Smishing ve vishing: Hem smishing hem de vishing ile telefonlar, iletişim yöntemi olan e-postaların yerini alıyor. Smishing, saldırganların metin mesajları göndermesi demektir (içeriği e-posta kimlik avıyla aynıdır). Vishing, ise bir telefon görüşmesini içerir. Saldırganın, dolandırıcılık araştırmacısı adıyla (kart şirketinden veya bankadan) kurbana hesabının ihlal edildiğini söylemesini içerir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Fener kimlik avı: Sosyal medyada bulunan sahte URL’ler; klonlanmış web siteleri, gönderiler; ve anlık mesajlaşma, insanları hassas bilgileri ifşa etmeye veya kötü amaçlı yazılım indirmeye ikna etmek için kullanılabilir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Phishing Saldırılarından Korunmak&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Kimlik avı saldırısına karşı koruma için hem kullanıcılar hem de kuruluşların adımlar atmasını gerektirir. Kullanıcılar için tetikte olmak önemlidir. Sahte bir mesaj genellikle gerçek kimliğini ortaya çıkaran ince hatalar içerir. Kullanıcılar neden böyle bir e-posta aldıklarını düşünmelidir. Kuruluşlar için, kimlik avı saldırılarını engellemek için bazı koruma teknikleri uygulanabilir:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Kötü amaçlı bağlantılara tıklamalarını önlemek için çalışanları kimlik avı saldırılarını tanımaları için eğitmek gerekir. Örneğin, yönlendirildiğiniz bağlantının etki alanı sözde şirket etki alanıyla eşleşmiyorsa, bağlantı sahtedir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Şüpheli kaynaklardan gelen e-postaları tanımak ve çalışanların gelen kutusuna ulaşmasını önlemek için birçok spam filtresi etkinleştirilebilir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bir kullanıcının kimlik bilgilerini tehlikeye atan bilgisayar korsanlarının her zaman erişim kazanmasını önlemek için iki faktörlü kimlik doğrulama(2FA) uygulanmalıdır. İki faktörlü kimlik doğrulama, hassas uygulamalarda oturum açarken fazladan bir doğrulama katmanı eklediği için, kimlik avı saldırılarına karşı en etkili yöntemdir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tarayıcı eklentileri ve uzantıları, kullanıcıların kötü amaçlı bağlantıları tıklamasını engelleyen tarayıcılarda etkinleştirilebilir.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 05 Jan 2023 12:00:00 +0300</pubDate>
+        <link>http://localhost:4000/blog/Phising</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Phising</guid>
+      </item>
+    
+      <item>
+        <title>Parameter Tampering Atağı</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/TR7-Website/17.jpeg&quot; alt=&quot;Parameter Tampering&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;parameter-tampering-atağı&quot;&gt;&lt;strong&gt;Parameter Tampering Atağı&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Parameter Tampering Atağı Nedir?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Parametreler, URL sorgu dizeleri, form alanları ve çerezler kullanılarak geçirilir. Parametre kurcalama web tabanlı bir saldırı şeklidir, bir kullanıcı tarafından girilen URL veya Web sayfası form alanı verilerindeki belirli parametrelerin, saldırgan tarafından kullanıcının yetkisi olmadan değiştirilir. Bu, tarayıcıyı kullanıcının amaçladığından farklı bir bağlantıya, sayfaya veya siteye yönlendirir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Parameter Tampering Atağı Nasıl Çalışır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Parametre kurcalamanın amacı form alanlarındaki parametreleri değiştirmektir. Kullanıcı bir HTML sayfasında seçim yaptığında, bunlar genellikle form alanı değerleri olarak depolanır ve HTTP isteği olarak Web uygulamasına gönderilir. Bu değerler, birleşik giriş kutusu, onay kutusu, radyo düğmesi, vb., Serbest metin veya gizli kullanılarak önceden seçilebilir. Bu değerlerin tümü bir saldırgan tarafından değiştirilebilir. Çoğu kez bu, sayfayı kaydetmek, HTML’i düzenlemek ve Web tarayıcısında sayfayı yeniden yüklemek kadar basittir.&lt;/p&gt;
+
+&lt;p&gt;Örneğin gizli alanlar, normalde web uygulamasına durum bilgisi sağlamak için kullanılan ve son kullanıcı tarafından görünmeyen parametrelerdir. Saldırganlar gizli alan değerini isteği doğrultusunda değiştirebilir.&lt;/p&gt;
+
+&lt;p&gt;Saldırgan, HTML formları sonuçlarını GET veya POST yöntemlerinden birini kullanarak gönderir. Yöntem GET, tüm form parametreleri ve bunların değerleri, kullanıcının gördüğü bir sonraki URL’nin sorgu dizesinde görünecektir. Böylece saldırgan bu sorgu dizesini değiştirebilir.&lt;/p&gt;
+
+&lt;p&gt;Parametre kurcalama basit ancak oldukça etkili olarak kabul edilir. Bu atak tipi veri ifşasıyla sonuçlanan çeşitli şekillerde gerçekleştirilebilir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Parameter Tampering atak tiplerinden bazıları;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Parametre kurcalama basit ancak oldukça etkili olarak kabul edilir. Bu atak tipi veri ifşasıyla sonuçlanan çeşitli şekillerde gerçekleştirilebilir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cookie : Cookie’ler, istemci tarafından değiştirilebilmekte ve URL istekleriyle sunucuya gönderilebilmektedir. Bu nedenle, saldırgan, cookie içeriğini değiştirmek için bundan yararlanabilir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Form alanları : Form alanı kurcalanması, bir saldırgan web sunucusuna gönderilen verileri kurallara aykırı bir şekilde değiştirerek bir formun davranışını değiştirmeye çalıştığında gerçekleşir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;HTTP başlıkları : HTTP istek başlığında bulunan yönlendirme başlığı, isteğin kaynaklandığı web sayfasının URL’sini içerir. Fakat saldırganlar, referans başlığını orijinal bir siteden gelmiş gibi değiştirebilir. HTTP yanıtları oluşturma yeteneği, kullanıcılar arası kurcalama, web ve tarayıcı önbelleği zehirlenmesi, siteler arası komut dosyası oluşturma gibi ortaya çıkan çeşitli saldırılara izin verir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;URL Manipülasyonu : URL, parametreler aracılığıyla hassas bilgiler ilettiğinde, bilgisayar korsanı bu sorgu dizesini değiştirebilir ve böylelikle kötü amaçlı eylemler gerçekleştirebilir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Parameter Tampering Saldırılarından Korunmak&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Parametre kurcalaması, kullanıcı hakkında kişisel veya ticari bilgileri gizlice elde etmek için suçlular ve kimlik hırsızları tarafından kullanılabilir. Parametre tahrifinin önlenmesine yönelik önlemler, işlemin yürütülmesi için parametrenin gerçekten gerekli olup olmadığına bakılmaksızın, minimum ve maksimum izin verilen uzunluk, izin verilen sayısal aralık, izin verilen karakter dizileri ve kalıplarla ilgili standartlara uyduklarından emin olmak için tüm parametrelerin doğrulanmasını içerir.&lt;/p&gt;
+
+&lt;p&gt;Beyaz listeye alma biçimi, kara listeye almaktan daha etkilidir. Bir web uygulaması güvenlik duvarı , kullanımdaki site için doğru şekilde yapılandırılmış olması koşuluyla, parametrelerin değiştirilmesine karşı bir miktar koruma sağlayabilir. Ayrıca, parametre kurcalamasını önlemek için oturum çerezlerini şifrelemek de koruma sağlamaktadır. Genel olarak, bir bilgisayarın veya ağın parametre kurcalamaya karşı savunmasızlığı, katı bir uygulama güvenliği rutini uygulanarak ve güncel tutulmasını sağlanarak en aza indirilebilir.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 Jan 2023 12:00:00 +0300</pubDate>
+        <link>http://localhost:4000/blog/Parameter_Tampering_Attack</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Parameter_Tampering_Attack</guid>
+      </item>
+    
+      <item>
+        <title>Man In The Middle</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/TR7-Website/2.jpeg&quot; alt=&quot;Man In The Middle&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;man-in-the-middle&quot;&gt;&lt;strong&gt;Man In The Middle&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Man In the Middle Atağı Nedir?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Man in the middle (MitM) atağı üç varlık gerektiren bir ataktır. Bu roller; kurban, kurbanın iletişim kurmaya çalıştığı varlık ve kurbanın iletişimini kesen “ortadaki adam”. Bu saldırı tipinde saldırgan kurban ve taraf arasındaki iletişimi gizlice dinler veya ikisi arasındaki trafiği değiştirmek için araya girer. Saldırganlar, oturum açma kimlik bilgilerini veya kişisel bilgileri çalmak, kurbanı gözetlemek veya iletişimleri veya verileri sabote edebilir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Man In the Middle Atağı Nasıl Çalışır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Man in the middle saldırısı en eski siber güvenlik saldırılarından biridir. MitM saldırıları, iki tarafın bağlantısı arasında durmak ve trafiği gözlemlemek veya manipüle etmekten oluşur. Bu, yasal ağlara müdahale ederek ya da saldırganın kontrol ettiği sahte ağlar yaratarak olabilir. Ardından, saldırganın tercih ettiği hedefe doğru bu trafiği çalmak, değiştirmek veya yeniden yönlendirmek için güvenliği ihlal edilmiş trafik tüm şifrelemelerden arındırılır. Saldırganlar, kaydedildikten veya düzenlendikten sonra durdurulan trafiği sessizce gözlemleyebilir veya ihlal edilen kaynağı yeniden şifreliyor olabileceğinden, tespit edilmesi zor bir saldırı olabilir.&lt;/p&gt;
+
+&lt;p&gt;MitM, hedefe bağlı olarak çok çeşitli teknikleri ve potansiyel sonuçları kapsar. Örneğin, SSL soymada, saldırganlar kendisiyle sunucu arasında bir HTTPS bağlantısı kurar, ancak kullanıcıyla güvenli olmayan bir HTTP bağlantısı kurar, bu da bilgilerin şifreleme olmadan düz metin olarak gönderi ldiği anlamına gelir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Man In the Middle Atağı Nasıl Anlaşılır?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Man in the middle saldırılarının yakalanması zor olabilir fakat bazı bu saldırılar tespit edilmesi kolay dalgalanmalar yaratır. Bu yüzden geleneksel bilgelik bu durumlar için önemlidir. Saldırganlar, yeniden bağlanmaya çalıştığında kullanıcı adı ve parolayı ele geçirebilmeleri için kullanıcıların bağlantısını zorla keser. Beklenmedik veya tekrarlanan bağlantı kesilmelerini izleyerek bu tehlikeli davranışı olarak tespit edebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Adres çubuğundaki herhangi bir şey az da olsa tuhaf görünüyorsa, iki kez kontrol edin. DNS saldırısı olabilir. Örneğin, adres isminde bir harf büyük olabilir. Hangi ağlara bağlandığınız konusunda çok dikkatli olun ve mümkünse halka açık Wi-Fi’dan. Saldırganlar, insanları bağlanmaları için “yerel ücretsiz kablosuz” gibi bilinen kimliklerle sahte ağlar oluşturur. Saldırganın Wi-Fi ağına bağlanırsanız, ağda gönderdiğiniz her şeyi kolayca görebilirler.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Man In the Middle Atak tiplerinden bazıları;&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Yalnızca güvenli Wi-Fi yönlendiricilerine bağlanın veya kablosuz operatörünüzün şifreli bağlantısını kullanın. WPA2 güvenliğini kullanan yönlendiricilere bağlanın.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;End-point’ler ile VPN sunucusu arasındaki trafiği şifrelemek için bir VPN ekleyin (kurumsal ağda veya internette). Trafik şifreliyse, bir MiTM saldırganının onu çalması ya da değiştirmesi daha zordur.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;E-postalarınız, sohbetiniz ve görüntülü iletişiminiz için uçtan uca şifreleme kullanın. Parolalarınızı korumak ve parolaların yeniden kullanılmasını önlemek için bir parola yöneticisi kullanın.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Yalnızca HTTPS bağlantılarına bağlanın, bu kuralı uygulamak için bir tarayıcı eklentisi kullanın.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Mümkün olan her yerde çok faktörlü kimlik doğrulama kullanın.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Kullanımdaki bir uzlaşmanın veya MitM tekniklerinin kanıtlarını tespit etmek için ağdaki etkinliği izleyin.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h6 id=&quot;man-in-the-middle-saldırılarından-korunmak&quot;&gt;&lt;strong&gt;Man In the Middle Saldırılarından Korunmak&lt;/strong&gt;&lt;/h6&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sizi ve ağlarınızı MitM saldırılarından korumak için birkaç iyi uygulama vardır fakat hiçbiri %100 kusursuz değildir.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;ARP Önbellek Zehirlenmesi&lt;/strong&gt;: Saldırganlar, bilgisayarınızı saldırganın bilgisayarının ağ geçidi olduğunu düşünmesi için kandırmak için bu sisteme yanlış bilgi enjekte eder. Ağa bağlandığınızda, saldırgan tüm ağ trafiğinizi ve trafiği gerçek hedefine iletir. Senin bakış açına göre her şey normal. Saldırgan, tüm paketlerinizi görebilir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;DNS Önbellek Zehirlenmesi&lt;/strong&gt;: DNS önbellek zehirlenmesi, saldırganın size farklı bir web sitesine yönlendiren sahte bir DNS girişi vermesidir. Google’a benzeyebilir, ancak Google değildir ve saldırgan sahte web sitesine girdiğiniz her türlü kişisel veriyi çalar.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;HTTPS Adres Sahteciliği&lt;/strong&gt;: HTTPS, kullanıcıların verilerinin “güvenli” olduğunu bilmesinin yollarından biridir. En azından bir saldırganın düşünmenizi istediği şey budur. Saldırganlar, geçerli kimlik doğrulama sertifikalarına sahip meşru siteler gibi görünen HTTPS web siteleri kurarlar, ancak URL biraz farklı olacaktır. Örneğin, ‘a’ gibi görünen ancak olmayan bir unicode karakterine sahip bir web sitesi kaydedecekler. “Example.com” örneğiyle devam edersek, URL https://www.example.com gibi görünebilir, ancak “örnek” deki “a”, yalnızca görünen geçerli bir unicode karakter olan bir kiril “a” dır. Farklı bir unicode değerine sahip arapça “a” gibi.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Wi-Fi Dinleme&lt;/strong&gt;: Saldırganlar, güvenli olmayan Wi-Fi ağlarındaki trafiği dinler veya insanları kandırmak için ortak isimlerle Wi-Fi ağları oluştururlar, böylece kimlik bilgilerini, kredi kartı numaralarını veya kullanıcıların o ağda gönderdiği diğer kişisel bilgileri çalabilirler.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Oturum Kaçırma&lt;/strong&gt;: Oturum ele geçirme, saldırganın bir web sayfasında (banka hesabı, e-posta hesabı vb.) oturum açmanızı izlediği ve ardından aynı hesaba tarayıcısından oturum açmak için oturum çerezinizi çaldığı bir MitM saldırısıdır.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 05 Jan 2023 12:00:00 +0300</pubDate>
+        <link>http://localhost:4000/blog/ManInTheMiddle</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/ManInTheMiddle</guid>
+      </item>
+    
+  </channel>
+</rss>

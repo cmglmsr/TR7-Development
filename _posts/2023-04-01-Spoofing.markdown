@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "Spoofing Saldırısı"
+date:   2023-01-05 09:00:00
+isStaticPost: false
+language: "English"
+---
+
+![SQL Injection](/TR7-Website/8.jpeg)
+
+
+#### **Spoofing Saldırısı**
+
+- **Spoofing Atağı Nedir?**
+
+Bilgi ve network güvenliği, bir kişinin veya programın yasadışı yollarla verileri saptırarak başka bir kimlik olarak tanımlandığı bir durumdur. Adres sahteciliği, kullanıcıya zararlı bir şey yapmasını sağlamak için güvenilir bir kullanıcı veya cihaz kılığına sokan davranış türüdür.
+
+Adres sahteciliği saldırıları, kimlik avı kampanyalarında kullanılan yaygın e-posta sahtekarlığı saldırılarından, genellikle dolandırıcılık yapmak için kullanılan arayan kimliği sahtekarlığı saldırılarına kadar pek çok biçimde olabilir. Saldırganlar ayrıca bir kimlik sahtekarlığı saldırısının parçası olarak bir kuruluşun ağının IP adresi, etki alanı adı sistemi (DNS) sunucusu veya Adres Çözümleme Protokolü (ARP) hizmeti gibi daha teknik unsurlarını hedefleyebilir.
+
+Adres sahteciliği saldırıları genellikle, kurbanın tanıdığı kişi ya da bir kuruluşu taklit ederek yapılır. E-posta sahtekarlığı veya web sitesi sahtekarlığı içeren balina kimlik ağı saldırıları gibi bazı durumlarda , bu mesajlar, söz konusu kişiyi iletişimin meşru olduğuna ikna etmek için kurbana kişiselleştirilebilir.
+
+- **Spoofing Atağı Nasıl Çalışır?**
+
+İnternette bazı arka planlar vardır. İlk olarak internet üzerinden iletilen veriler paketlere dağıtılır ve bu paketler birbirinden bağımsız olarak iletilir son olarak paketler tekrar birleşir. Her bir paketin, kaynak ve hedef IP adresi dahil olmak üzere kendi IP (internet protokolü) adresi vardır.
+
+- **Spoofing Atağı Nasıl Anlaşılır?**
+
+Bir spoofing atağını engellemenin en iyi yolu kullanıcı eğitimi tarafındaki sahtekarlığa maruz kaldığınıza dair işaretlere dikkat etmektir. Örneğin, e-posta adres sahteciliği kullanan bir kimlik avı saldırısı, alışılmadık dilbilgisi, kötü yazım veya garip bir dil içerebilir. Ayrıca, daha ayrıntılı bir incelenirse, gönderenin e-posta adresinin bir harf farklı olduğunu veya mesajda yer alan URL'nin olması gerekenden biraz farklı bir yazılışı olduğunu fark edebilirsiniz. E-posta, metin veya başka bir kanal yoluyla gelen, sahte bir mesaj olduğundan şüphelenilen, mesajdaki bağlantıların veya eklerin hiçbirine tıklamamak gerekir. Sınıfının en iyisi bir olay algılama ve müdahale çözümü, anormal kullanıcı aktivitesinin tespit edilmesi durumunda sizi proaktif olarak bilgilendirerek kuruluşunuzu daha da koruyabilir.
+
+- **Spoofing atak tiplerinden bazıları;**
+
+IP sahtekarlığında, saldırganın sahte IP adresli mesajlar göndererek, mesajın aynı dahili bilgisayar ağındaki gibi güvenilir bir kaynaktan geliyormuş gibi görünmesini sağlamak için sisteme yetkisiz erişim sağlamaya çalışmasını içerir.
+
+Web sitesi sahtekarlığında, bir browserı ele geçiren bir korsan yazılımcı, ziyaretçilerini yasal bir web sitesine benzeyen bir siteye yönlendirir. Bu saldırgan sonradan ziyaretçilerin kişisel ve ödeme bilgilerini çalmasıdır.
+
+E-posta sahtekarlığında, e-postalar müşteriler, iş arkadaşları gibi güvenilir kişilerden geliyor gibi görünür fakat bunlar aslında gerçekleştirmenizi istedikleri eylemde yardımınızı almak için kasıtlı olarak kendilerini gizleyen siber suçlulardan gelir. Bu e-postalar talep, para transferi veya bir sisteme erişim izni içeriyor olabilir. Ayrıca, sahte e-postalar bazen açıldığında Trojans (Truva atları) veya virüsler gibi kötü amaçlı yazılım yükleyen ekler içerebilir. Bu durumda, bu yazılım lar bilgisayarınıza bulaşmanın ötesine geçecek ve tüm ağınıza yayılacak şekilde tasarlanmıştır.
+
+- **Spoofing Saldırılarından Korunmak**
+
+Siber suçlara karşı savunmanın çoğu yönünde olduğu gibi, kendini korumanın temel ilkesi farkındalıktır. Özellikle de sanal dünyada korunmak çok önemli olabilir.
+
+Akıllı güvenlik araçları, sahtekarlık saldırılarını önlemenize yardımcı olabilir. Örneğin, bir spam filtresi, kimlik avı e-postalarının çoğunun kişinin gelen kutusuna ulaşmasını engeller. Bazı kuruluşlar ve bazı network taşıyıcıları, kullanıcıların telefonlarına ulaşmasını engellemek için benzer yazılımlar kullanır. Adres sahteciliği algılama yazılımı, bazı sahtekarlık saldırılarına karşı ek koruma sağlayabilir ve herhangi bir zarar verme şansı bulamadan bunları tespit etme ve engelleme yeteneğinizi geliştirir.
+
+Bazı iyi uygulamalar, bir spoofing saldırısına gitme şansınızı da azaltabilir. Mümkün olduğunca ağınızda kimlik doğrulama için güven ilişkilerine güvenmekten kaçınmalısınız. Aksi takdirde saldırganlar, başarılı spoofing saldırıları yapmak için bu ilişkilerinizden yararlanabil ir. Paket filtreleme, çakışan kaynak adresi bilgileri içeren paketleri filtreleyebildiği ve engelleyebildiği için IP sahtekarlığı saldırısını önleyebilir. HTTP Secure (HTTPS) ve Secure Shell (SSH) gibi kriptografik ağ protokolleri kullanarak ortamınıza başka bir koruma katmanı ekleyebilirsiniz. Ayrıca, Güçlü bir internet güvenliği yazılımı, sizi sahte sitelerden koruyabilir ve sisteminize sızmaya çalışan kötü amaçlı yazılımları ortadan kaldırabilir.

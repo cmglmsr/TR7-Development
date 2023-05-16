@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Test Blog"
+date:   2023-01-05 09:00:00
+isStaticPost: false
+language: "English"
+---
+
+Buraya blog postunun yazısı eklenir. Markdown stilleri kullanılarak yazı kişiselleştirilebilir.

@@ -1,0 +1,76 @@
+- 
+  id: 3
+  name: "Document"
+  surname: "1"
+  company: "Date"
+  title: "Add title of the document here."
+  bio: "Add information about the documentation here."
+  thumbnailUrl: DawidOstrowski.jpg
+  rockstar: true
+  social: 
+    - {name: "google-plus", link: "https://plus.google.com/+DawidOstrowski/"}
+- 
+  id: 4
+  name: "Document"
+  surname: "2"
+  company: "Date"
+  title: "Add title of the document here."
+  bio: "Add information about the documentation here."
+  thumbnailUrl: DmytroDanylyk.jpg
+  rockstar: true
+  social: 
+    - {name: "google-plus", link: "https://plus.google.com/+DmytroDanylyk"}
+    - {name: "twitter", link: "https://twitter.com/dmytrodanylyk"}
+    - {name: "github", link: "https://github.com/dmytrodanylyk"}
+- 
+  id: 5
+  name: "Document"
+  surname: "3"
+  company: "Date"
+  title: "Add title of the document here."
+  bio: "Add information about the documentation here."
+  thumbnailUrl: MateuszHerych.jpg
+  rockstar: true
+  ribbon: 
+    - {abbr: "GDE", title: "Google Developer Expert", url: "https://developers.google.com/experts/"}
+    - {abbr: "GDG", title: "Google Developer Group", url: "https://developers.google.com/groups/chapter/107562802227561437057/"}
+  social: 
+    - {name: "google-plus", link: "https://plus.google.com/+MateuszHerych"}
+    - {name: "twitter", link: "https://twitter.com/mherych"}
+- 
+  id: 6
+  name: "Document"
+  surname: "4"
+  company: "Date"
+  title: "Add title of the document here."
+  bio: "Add information about the documentation here."
+  thumbnailUrl: RomanMazur.jpg
+  rockstar: true
+  ribbon:
+    - {abbr: "GDG", title: "Google Developer Group", url: "https://developers.google.com/groups/chapter/110301321530950732281/"}
+  social: 
+    - {name: "google-plus", link: "https://plus.google.com/+RomanMazur/"}
+    - {name: "twitter", link: "http://twitter.com/roman_mazur"}
+- 
+  id: 7
+  name: "Document"
+  surname: "5"
+  company: "Date"
+  title: "Add title of the document here."
+  bio: "Add information about the documentation here."
+  thumbnailUrl: ValentynShybanov.jpg
+  rockstar: true
+  ribbon:
+    - {abbr: "GDG", title: "Google Developer Group", url: "https://developers.google.com/groups/chapter/110301321530950732281/"}
+  social: 
+    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
+    - {name: "site", link: "http://olostan.name/"}
+-
+  id: 8
+  name: "Test Document"
+  surname: "6"
+  company: "Date"
+  title: "Add title of the document here."
+  bio: "Add information about the documentation here."
+  thumbnailUrl: ValentynShybanov.jpg
+  rockstar: false

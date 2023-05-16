@@ -1,0 +1,307 @@
+<section id="tr_collapse" class="tr_collapse">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        .collapse-container{
+            max-width: 700px;
+            margin:0 auto ;
+        }
+        .collapse{
+            
+            border: 1px solid #9fa4a8;
+            background: transparent;
+            border-radius: 15px;
+            padding: 8px 8px;
+            margin: 20px 20px;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease-in;
+        }
+        .collapse.active{
+           background-color: rgb(96, 192, 248);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+        .sub-title{
+            margin-bottom: 5px;
+        }
+
+        .sub-text{
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .collapse.active .sub-text{
+            display: block;
+        }
+
+
+    </style>
+    <div class="content-wrapper">
+        
+            <div class="collapse-container">
+                <div class="collapse">
+        
+                    <h3 class="sub-title"> Yük Dengeleme </h3>
+        
+        
+                    <ul class="sub-text">
+                        <li>Ağ Yükü Dengeleme (4. Katman)</li>
+                                            <ul style="position: relative;
+                                left: 15px !important;">
+                                                <li> TCP & UDP Bağlantı Noktası Aktarımı</li>
+                                                <li> Doğrudan DNS Yük Dengelemesi</li>
+                                                <li> Servis Yönlendirmesi</li>
+                                                <li> Tam Şeffaflık (İstemci IP › arka uç sunucuları)</li>
+                                            </ul>
+                                            <li>Uygulama Katmanında Yük Dengeleme (7. Katman)</li>
+                                            <li>IPv4 ve IPv6 desteği</li>
+                                            <li>SNI-SSL tabanlı sanal ana bilgisayar desteği</li>
+                                            <li>Web Hizmetleri ve Web Soketleri için yerel destek sağlanması (API aracılığı ile
+                                                yapılandırma yönetimi)</li>
+                                            <li>İçerik tabanlı akıllı sorgu yönlendirmesi (İçerik değiştirme)</li>
+                                            <li>Çerezleri kullanarak oturum sürekliliği ve bakım yönetimi</li>
+                                            <li>PHPSESSID, JSESSIONID, ASP.NET SessionID ve diğer uygulama çerezlerini
+                                                öğrenebilme</li>
+                                            <li>Network trafiğini denetleme ve düzenleme</li>
+                                            <li>Oturum durumunu tüm paralel TR7 ürünleri arasında eşlenik duruma getirme</li>
+                                            <li>Geniş bir yelpazede yük dengeleme algoritması seçimi yapabilme (round-robin,
+                                                leastconnection, hash…)</li>
+                                            <li>Sorunsuz bir şekilde sunucuları başlatma ve kapatma</li>
+                                            <li>Proxyler için optimize edilmiş karma algoritmalar kullanma</li>
+                                            <li>Ters proxy, NAT, Doğrudan Sunucu Dönüştürücü ve VIP'siz modları destekleme</li>
+                                            <li>Global Yük Dengeleme (Farklı veri merkezlerinde bulunan sunucular arasında yük
+                                                dengeleme)</li>
+                                            <li>Microsoft ürünleri için yük dengeleme hizmeti</li>
+                                            <ul style="position: relative;
+                                left: 15px !important;">
+                                                <li> Exchange, SharePoint, Lync, v.b.</li>
+                    </ul>
+                </div>
+        
+        
+                <div class="collapse">
+        
+                    <h3 class="sub-title"> Güçlü WEB Hızlandırıcı </h3>
+        
+                        <ul class="sub-text">
+                            <li>Web sunucuların yükünü azaltmak ve sayfa yükleme sürelerini kısaltmak için
+                                yüksek hızlı önbellek sistemi</li>
+                            <li>Nesne Öbellekleme</li>
+                            <li>Tüm resimleri, JavaScript, stil sayfalarını ve olabilecek tüm statik sayfa
+                                içeriklerini destekleme</li>
+                            <li>Koşul, kural oluşturma gibi basit programlama yetenekleri ile cihaz yönetimi
+                                sağlama</li>
+                            <li>Son kullanma sürelerini, içerik ayarlarını, trafik sıkıştırma işlemlerini akıllı
+                                bir şekilde ayarlama</li>
+                            <li>
+                                İçerik Oluşturma</li>
+                            <ul style="position: relative;
+                left: 15px !important;">
+                                <li> Belgeye bir başlık öğesi ekleme</li>
+                                <li> Birden fazla CSS öğesini bir araya getirme</li>
+                                <li> Birden çok komut dosyası öğesini birleştirme</li>
+                                <li> Http-equiv özniteliğine sahip her Meta etiketi için bir yanıt başlığı
+                                    ekleme</li>
+                                <li> Büyük boyutlardaki JPEG dosyalarını farklı formatlara dönüştürme</li>
+                                <li> URL'leri imzalayarak CSS, JS ve optimize edilmemiş formattaki resimlerin
+                                    önbellekleme sürelerini uzatma</li>
+                                <li> Ayrıştırılamayan ve küçültülemeyen bir CSS dosyasında başvurulan kaynakları
+                                    yeniden yazabilme</li>
+                                <li> Tüm içe aktarma kurallarını dahil ederek CSS kodlarını sisteme aktarma</li>
+                                <li> Küçük CSS dosyalarını HTML formatındaki belgelere çevirme</li>
+                                <li> Yalnızca CSS içeren stil etiketlerini, eşdeğer bağlantı etiketlerine
+                                    dönüştürülerek sisteme aktarma</li>
+                                <li> Küçük boyutlardaki JS dosyalarını HTML belgesine aktarma</li>
+                                <li> Fazla boşlukları ve yorumları kaldırmak için CSS dosyalarını yeniden
+                                    yapılandırma. (Bu özelliği etkinleştirerek, CSS dosyalarını tekrar
+                                    yapılandırma veya önbellekleme sürelerini uzatma)</li>
+                                <li> Görüntüleri optimize etme, yeniden kodlama, fazla pikselleri kaldırma</li>
+                                <li> Fazla boşlukları ve yorumları kaldırmak için JavaScript dosyalarını yeniden
+                                    yapılandırma</li>
+                                <li> CSS'i metin stiline uygun bir şekilde yeniden yapılandırma</li>
+                                <li> Önbellek korumalı içerikler oluşturma</li>
+                        </ul>
+                        <li>Trafik Sıkıştırma</li>
+        
+                                            <li>HTTP kimlik doğrulaması ve yetkilendirilmiş önbellekleme
+        
+                                            </li>
+        
+                                            <li>Sistem temizleme ve kapasite arttırma</li>
+                                            <li>Dahili sunucu hatalarını önleme</li>
+                                            <li>İstemcinin isteğinin ve sunucunun yanıtının herhangi bir bölümünü filtreleme
+                                            </li>
+                </div>
+        
+        
+                <div class="collapse">
+        
+                    <h3 class="sub-title"> Yüksek Uygulama Erişebilirliği </h3>
+        
+                    <ul class="sub-text">
+                        
+                                            <li>Düzenli aralıklarla sunucu ve uygulama sağlığı denetimleri yapabilme</li>
+                                            <li>Sunucuları aşırı trafik yüküne karşı koruma</li>
+                                            <li>Bir sunucuda meydana gelebilecek probleme karşı mod yönetimi (yedek sunucuya
+                                                yeniden yönlendirme)</li>
+                                            <li>Cihazı bekleme moduna alabilme</li>
+                                            <li>Bekleme modunda TR7 ürünlerine oturum kalıcılığı ve bakım yönetimi imkanı
+                                                sağlama</li>
+                    </ul>
+                </div>
+        
+              
+                <div class="collapse">
+        
+                    <h3 class="sub-title"> Entegrasyon ve Yönetim </h3>
+        
+                    <ul class="sub-text">
+                        <li>VLAN (802.1q), çoklu VPN (IPSec ya da SSL) destekleme</li>
+                                            <li>Ağ arayüzü köprüleme ve bağlantı sağlama</li>
+                                            <li>Syslog, SNMP, SNMP traps, VRRP(CARP) ve NTP standartlarını destekleme</li>
+                                            <li>Proxy veya şeffaf proxy modunda entegrasyon sağlama</li>
+                                            <li>Sunucuların ve uygulamaların durumunun, bağlantı detaylarının ve faaliyet
+                                                istatistiklerinin gelişmiş şekilde izlemesini ve kaydının tutulması</li>
+                                            <li>
+                                                Sunucuların ve uygulamaların durumunun, bağlantı detaylarının ve faaliyet
+                                                istatistiklerinin gelişmiş şekilde izlemesini ve kaydının tutulması</li>
+        
+                                            <li>Web tabanlı ve CLI yönetim ara yüzü üzerinden erişim sağlama (SSH veya seri
+                                                bağlantı noktası erişimi)</li>
+        
+                                            <li>Arıza tespit araçlarının yönetimi
+        
+                                            </li>
+        
+                                            <li>Çok katmanlı görüntüleme ve yapılandırma yönetimi</li>
+                                            <li>Bulut yönetimi</li>
+                                            <li>Bulut tabanlı yük dengeleme kullanımı</li>
+                                            <li>TR7 üzerinde limitsiz kullanıcı oluşturma ve kullanıcı izinleri tanımlama</li>
+                                            <li>REST / JSON web hizmeti ve SSH aracılığıyla ürün yapılandırması</li>
+                                            <li>Özel API desteği ile çok kullanıcılı sistem mimarisini yapılandırma ve yönetme
+                                            </li>
+                    </ul>
+                </div>
+        
+               
+                <div class="collapse">
+        
+                    <h3 class="sub-title"> Uygulama Güvenliği </h3>
+        
+                    <ul class="sub-text">
+                        <li>Protokol doğrulaması (HTTP)</li>
+                                            <li>Hizmet kesintisine sebep olabilecek saldırılara (DoS, DDoS, SQL injection v.b.)
+                                                karşı koruma sağlama</li>
+                                            <li>Kara liste ve beyaz liste yönetimi</li>
+                                            <li>URL'leri yeniden yazma ve yeniden yönlendirme</li>
+                                            <li>Gelişmiş URL filtreleme ve kimlik doğrulama özellikleri ile erişim kısıtlama
+                                            </li>
+                                            <li>Bilgi sızıntılarının engellenmesi ve hassas bilgilerin korunması</li>
+                                            <li>HTTP / HTTPS sorgularının ve yanıtlarının filtrelemesi</li>
+                                            <li>HTTP bilgisi yönetimi</li>
+                    </ul>
+                </div>
+        
+                
+                <div class="collapse">
+        
+                    <h3 class="sub-title"> Uygulama Performansı </h3>
+        
+                    <ul class="sub-text">
+                        <li>Sanal sunucu kullanarak sınırsız IP bağlantı noktası oluşturma ve yönetimini
+                            sağlama</li>
+                        <li>Ayrıntılı uygulama günlüklerinin (kayıtlarının) sunucular haricinde bir ortamda
+                            saklanması (Sunucu yükünü azaltma)</li>
+                        <li>Ara belleğe alma yoluyla TCP / HTTP hızlandırma</li>
+                        <li>Dinamik yük dengeleme ile sunucu bağlantı yoğunluğunu ayarlama</li>
+                        <li>Kötü amaçlı veya gereksiz HTTP sorgularını engelleme</li>
+                    </ul>
+                </div>
+        
+                
+                <div class="collapse">
+        
+                    <h3 class="sub-title"> Marka Bağımsız Sunucular ile Uyumlu Hizmet </h3>
+        
+                    <ul class="sub-text">
+                        <li>TR7 Yük Dengeleme ve Uygulama Güvenlik Duvarı, büyük ticari donanım platformları
+                            (Dell, IBM, NEC, HP, SuperMicro ve Tyan dahil) üzerinde kullanılabilir. (Böylece
+                            bir üretici ile ana sözleşmesi olan kurum-kuruluş ve işletmeler, barındırma
+                            sağlayıcıları ve veri merkezleri harici bir donanımı mevcut ortamlarına entegre
+                            etmek zorunda kalmadan marka bağımsız donanımlar ile çalışabilirler.)</li>
+                    </ul>
+                </div>
+        
+                <div class="collapse">
+        
+                    <h3 class="sub-title"> Donanım ile Uyumlu Performans </h3>
+        
+                    <ul class="sub-text">
+                        <li>TR7 Yük Dengeleme ve Uygulama Güvenlik Duvarı, donanım bazlı cihazlar üzerinde
+                            Ağ Güvenlik Katmanı (Layer 4) ve Uygulama Güvenlik Katmanı (Layer 7) bazında
+                            güvenlik sağlar. (Ürüne ait performans değerleri kullanılan donanımın teknik
+                            özelliklerine göre değişiklik göstermektedir.)</li>
+        
+                    </ul>
+                </div>
+        
+                <div class="collapse">
+        
+                    <h3 class="sub-title"> Sanal Ortam Desteği </h3>
+        
+                    <ul class="sub-text">
+                        <li>TR7 Yük Dengeleme ve Uygulama Güvenlik Duvarı Sanal Cihazı, bulut bilgi işlem
+                            için tasarlanmış sanal ortamlara ve mimarilere sorunsuz bir şekilde entegre
+                            olacak şekilde tasarlanmıştır.</li>
+                        <li>TR7 Yük Dengeleme ve Uygulama Güvenlik Duvarı aşağıdaki sanal ortamları
+                            destekler;</li>
+                        <ul style="position: relative;
+             left: 15px !important;">
+                            <li>VMware™</li>
+                            <li>Microsoft Hyper-V™</li>
+                            <li>Citrix XenServer™</li>
+                            <li>Red Hat™ Enterprise Virtualization</li>
+                            <li>KVM (Kernel-based Virtual Machine)</li>
+                            <li>Xen</li>
+                    </ul>
+                </div>
+        
+                <div class="collapse">
+        
+                    <h3 class="sub-title"> İstediğiniz Donanım Platformuna Bir TADP Kurmak İçin; </h3>
+        
+                    <ul class="sub-text">
+                        <li>Total Application Security Platform ayrıca SSD (Katı Hal Diski) belleğe de
+                            yerleştirilmiştir. Åirketlere TADP'yi barındıracak donanım platformunu seçme
+                            olanağı veren çoğu ticari sunucu ile uyumludur.
+        
+                    </ul>
+                </div>
+        
+            </div>
+
+        </div>
+        
+    
+          
+    
+
+            
+
+    
+</section>
+<script>
+    const collapse = document.querySelectorAll(".collapse");
+
+
+    collapse.forEach((collapse) => {
+collapse.addEventListener("click", function () {
+collapse.classList.toggle("active");
+});
+});
+</script>

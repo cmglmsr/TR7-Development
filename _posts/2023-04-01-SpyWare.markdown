@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Spyware"
+date:   2023-01-05 09:00:00
+isStaticPost: false
+language: "English"
+---
+![SpyWare](/TR7-Website/1.jpeg)
+
+#### **Spyware**
+
+- **Spyware Atağı Nedir?**
+
+Spyware (casus) yazılım, bir cihazdaki etkinliği gizlice gözlemlemek ve bu gözlemleri bir meraklıya göndermek için tasarlanmış bir kötü amaçlı yazılım sınıfıdır. Bu veriler, çevrimiçi aktivitenizi izlemek için kullanılabilir ve bu bilgiler pazarlamacılara satılabilir. Casus yazılım, birçok amaç için kullanılabilir. Genellikle internet kullanım verilerinizi izlemeyi ve satmayı, kimlik hırsızlığı ve dolandırıcılıkla sonuçlanabilecek hesap parolaları ve kredi kartı numaraları gibi kişisel bilgileri çalmayı amaçlar.
+
+- **Spyware Atağı Nasıl Çalışır?**
+
+Spyware yazılımlar çeşitli şekillerde dağıtılır. En yaygın olan yazılım türü, kullanıcıların kötü niyetli bir web sitesine yönlendiren bir bağlantıya tıklamalarını sağlamaktır. Bu kötü amaçlı bağlantılar e-postalarda, metin mesajlarında, bir tarayıcıdaki açılır pencerelerde ve web sayfalarındaki reklamlarda olabilir. Virüslü bağlantıların Google arama sonuçlarında da göründüğü bilinmektedir.
+
+Bazen virüslü bir web sitesine gitmek için sadece kötü amaçlı bir bağlantıya tıklamanız gerekmez. Bu, meşru web sitelerine verilen virüslü reklam yoluyla yapılır. Bazen, saldırganlar yasal web sitelerine kötü amaçlı kod yerleştirerek ziyaretçiye yalnızca bir sayfaya tıklamalarıyla bile bulaşabilir.
+
+- **Spyware Atağı Nasıl Anlaşılır?**
+
+Spyware yazılımların cihazınızda anlaşılması zor olabilir. Doğası gereği aldatıcı olması ve bulunması zor olması gerekiyor. Fakat spyware yazılımdan etkilenip etkilenmediğinizi anlamanıza yardımcı olabilecek bazı ipuçları var. Eğer bilgisayarınızda bu belirtileri görüyorsanız casus yazılım sorununuz olabilir. Bunlar; cihazınız yavaşlaması ve beklenmedik zamanlarda çökmesi, cihazınızın sabit disk alanının bitmesi ve çevrimiçi veya çevrimdışı olduğunuzda açılır pencereler görünmesidir.
+
+- **Spyware atak tiplerinden bazıları;**
+
+- Reklam yazılımı: Çevrimiçi etkinliklerinize bakar ve bu bilgilere dayanarak ilgileneceğinizi düşündüğü reklamları görüntüler. Diğer bazı casus yazılım tipleriyle karşılaştırıldığı zaman iyi huylu olsa da reklam yazılımları bir aygıtın performansını etkileyebileceği gibi rahatsız edici de olabilir.
+
+- Truva atları: Bir cihaza yazılımın içinde gizli bir şekilde indikten sonra, banka hesabı bilgileri gibi hassas bilgileri alır ve bunları para çalmak, hesapları tehlikeye atmak veya satın alımlar yapmak için kullanacak olan üçüncü tarafa gönderirler. Ayrıca, bir uzaktan erişim Truva Atı (Trojan) kurulumu yoluyla bir bilgisayarın kontrolünü ele geçirmek için kullanılabilirler.
+
+- Hırsızlık Yazılımı: Uygulama sayfalarına trafik gönderen web sitelerine kredi veren çevrimiçi alışveriş sitelerinden yararlanmak amacıyla tasarlanmıştır. Bir kullanıcı bu sitelerden birine gittiğinde, hırsızlık yazılımı isteği durdurur ve kullanıcıyı oraya göndermek için sorumluluk alır.
+
+- Sistem monitörleri: Tuş vuruşlarından, e-postalara ve sohbet odası iletişim kutularından ziyaret edilen web sitelerine, başlatılan programlara ve yapılan telefon görüşmelerine kadar bir cihazda olan her şeyi kaydeder ve bir meraklı veya siber suçluya gönderir. Ayrıca bir sistemin süreçlerini izleyebilir ve sistemdeki güvenlik açıklarını belirleyebilirler.
+
+- **Spyware Saldırılarından Korunmak**
+
+Spyware saldırılarını önlemek için ana yöntemler bulunmaktadır. Bunlardan bazıları aşağıda gösterilmiştir.
+
+- Bilinmeyen gönderenlerden gelen e-postaları açmamak.
+
+- Güvenilir olmayan kaynaklardan dosya indirmemek.
+
+- Açılır reklamlara tıklamamak.
+
+- Saygın bir antivirüs yazılımı kullanın.
+
+
+Spyware yazılım zararlı olabilir, ancak dikkatli olunarak ve düzgün bir virüsten koruma aracı kullanılarak kaldırılabilir ve/veya önlenebilir. Eğer bir casus yazılım cihazınıza bulaşmışsa yazılımı kaldırmak için bazı adımlar atın. Parolalarınızı değiştirmek ve sahtekarlık faaliyetlerini izlemesi için bankanızı bilgilendirmek proaktif olarak korunmanızı sağlayabilirsiniz.

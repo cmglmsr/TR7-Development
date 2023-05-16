@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "XSS Saldırısı"
+date:   2023-01-05 09:00:00
+isStaticPost: false
+language: "English"
+---
+
+![XSS](/TR7-Website/5.jpeg)
+
+
+#### **XSS Saldırısı**
+
+- **XSS (Cross-Site Scripting) Atağı Nedir?**
+
+Siteler arası komut dosyası çalıştırma (XSS), bir kullanıcının web tarayıcısına girdiği bilgilerin saldırgana gönderilmesine neden olacak saldırı kodunu içeren özel olarak hazırlanmış bir URL'dir. Bir saldırganın, farklı web sitelerini birbirinden ayırmak için tasarlanmış aynı menşe politikasını atlatmasını sağlar. Siteler arası komut dosyası çalıştırma güvenlik açıkları, normalde bir saldırganın kurban gibi görünmesine, kullanıcının gerçekleştirebileceği herhangi bir eylemi gerçekleştirmesine ve kullanıcının herhangi bir verisine erişmesine izin verir. Kurban kullanıcının uygulama içinde ayrıcalıklı erişimi varsa, saldırgan uygulamanın tüm işlevselliği ve verileri üzerinde tam kontrol sahibi olur.
+
+- **XSS Atağı Nasıl Çalışır?**
+
+Siteler arası komut dosyası çalıştırma, savunmasız bir web sitesini kullanıcılara kötü amaçlı JavaScript kodu döndürmesi için manipüle ederek çalışır. Kötü amaçlı kod bir kurbanın tarayıcısında yürütüldüğünde, saldırgan kurbanın uygulamayla etkileşimlerini tehlikeye atabilir.
+
+- **XSS Atağı Nasıl Anlaşılır?**
+
+En iyi savunma yöntemi olarak, web sunucularınızdaki her şeyi bir günlüğe kaydetmek ve test ve tespit yöntemleri için ha.ckers.org Cross Site Scripting hile sayfası gibi kaynakları kullanmaktır.
+
+Bunlarla birlikte, hiçbir şey durum tespiti ve sık sık log temizlemenin yerini alamaz. Sıra dışı bir şey için aranmak gerekir. Sıra dışı olan bir şeyi loglarınızı sık sık kontrol ederek anlayabilirsiniz. Bir XSS saldırısının işareti olan örnek bir web erişim log girişinde aranacak kısım GET// komutudur.
+
+- **XSS Atak tiplerinden bazıları;**
+
+- Kötü amaçlı komut dosyasının mevcut HTTP isteğinden gelen yansıtılan XSS. Uygulama bir HTTP isteğinde veri aldığında ortaya çıkar ve bu verileri güvenli olmayan bir şekilde anında yanıt içine dahil eder.
+
+- Kötü amaçlı komut dosyasının web sitesinin veritabanından gelen depolanan XSS. Uygulama güvenilir olmayan bir kaynaktan veri aldığında ortaya çıkar ve bu verileri daha sonraki HTTP yanıtlarına güvenli olmayan bir şekilde dahil eder. Söz konusu veriler, HTTP istekleri aracılığıyla uygulamaya gönderilebilir.
+
+- Güvenlik açığının sunucu tarafı kodundan ziyade istemci tarafı kodunda olduğu DOM (Document Object Model) tabanlı XSS. Uygulama güvenilmeyen bir kaynaktan verileri güvenli olmayan bir şekilde, genellikle verileri DOM'a yazarak işleyen bazı istemci tarafı JavaScript içerdiğinde ortaya çıkar.
+
+- **XSS Saldırılarından Korunmak**
+
+Siteler arası komut dosyası (XSS) saldırılarını önlemek için tek bir standart veya strateji yoktur. XSS saldırılarını önlemenin en iyi bilinen üç uygulaması vardır.
+
+- Kaçış: Verilerden kaçmak, bir uygulamanın aldığı verileri alıp son kullanıcı için oluşturmadan önce güvenliğini sağlamak anlamına gelir. Kullanıcı girişinden kaçılarak, bir web sayfası tarafından alınan verilerdeki anahtar karakterlerin kötü niyetli bir şekilde yorumlanması engellenecektir.
+
+- Giriş doğrulama: Girişin doğrulanması, bir uygulamanın doğru verileri işlemesini sağlama ve kötü niyetli verilerin veri tabanına, web sitesine ve kullanıcılara zarar vermesini önleme sürecidir. Beyaz liste ve giriş doğrulama XSS için ek bir önleme yöntemi olarak da kullanılabilirler. Kara listeye alma veya kullanıcı girdisinde önceden belirlenmiş belirli karakterleri engelleme, yalnızca bilinen kötü karakterlere izin vermezken, beyaz liste yalnızca bilinen iyi karakterlere izin verir ve XSS saldırılarını önlemek için daha iyi bir yöntemdir.
+
+- Sterilizasyon: Verileri temizlemek güçlü bir savunmadır fakat XSS ataklarıyla savaşmak için yeterli değildir. Kullanıcı girdisinin temizlenmesi özellikle HTML biçimlendirmesine izin veren sitelerde, alınan verilerin potansiyel olarak zararlı biçimlendirmeden verileri temizleyerek ve kabul edilemez kullanıcı girdilerini kabul edilebilir bir biçime değiştirerek hem kullanıcılara hem de veri tabanınıza zarar vermemesini sağlamak için yararlıdır.

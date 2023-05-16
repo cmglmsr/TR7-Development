@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "DDOS Saldırısı"
+date:   2023-01-05 09:00:00
+isStaticPost: false
+language: "English"
+---
+![DDOS](/TR7-Website/3.jpeg)
+
+#### **DDOS Saldırısı**
+
+- **DDoS Atağı Nedir?**
+
+Dağıtık Hizmet Reddi (DDoS) saldırısı, hedefinde bulunan veya çevresindeki altyapıya saldırmak için, saldıracağı sistemin kapasite sınırlarını kullanır. Bir İnternet trafiği seliyle (kaynağa birden çok istek göndererek) bastırarak hedeflenen bir sunucunun, hizmetin veya ağın normal trafiğini bozmaya, kapasitesini aşmaya ve doğru şekilde çalışmasını engellemeye yönelik kötü niyetli bir girişimdir.
+
+Sistemlere, sunuculara aynı anda hizmet verebilmenin limiti, internete bağlanan kanalın bant genişliği gibi unsurlarla sınırlıdır. Eğer gönderilmekte olan istek sayısı bileşenlerin kapasitelerini aşarsa sağlanan hizmet, cevapların çok daha yavaş ya da geç dönmesi, kullanıcıların hizmet alamaması gibi sorunlarla karşılaşabilir. Burada ki amaç kaynağın çalışmasını tam olarak engellemek olabileceğinden tam bir hizmet reddine sebep olabilmektedir. Saldırılar kullanım amacına göre çok daha karmaşık düzeyde kurgulanabilmektedir.
+
+- **DDoS Atağı Nasıl Çalışır?**
+
+Bir sisteme zarar verebilmek ve gigabit boyutlarında trafik oluşturabilmek tek bir makine kullanımı ile sağlanması mümkün olmayan bir olaydır. Bu sebeple, saldırının başlangıcı birçok cihaza virüs bulaştırmak ve onları zombi(bot) haline getirip bir botnet grubu kurmaktır. Bu botnetler kurulduktan sonra, saldırgan her bota uzaktan talimat göndererek saldırıyı yönetebilmektedir. Bir sunucu ya da ağ botnet tarafından hedeflendikten sonra, her bot hedeflenen IP adresine istek göndererek, sunucuya ya da ağa aşırı yüklenilmesine neden olmaktadır ve bu durum trafiğe hizmet reddi ile sonuçlanmaktadır. Böyle bir atak sırasında her bot yasal bir İnternet cihazı olduğundan, saldırı trafiğini normal trafikten ayırmak zor olabilmektedir.
+
+DDoS saldırıları, saldırı trafiği kaynağı olarak birden fazla ele geçirilmiş bilgisayar sistemini kullanarak etkinlik sağladığı için kötüye kullanılan makineler, bilgisayarları ve IoT cihazları gibi diğer ağlara bağlı kaynakları içerebilmektedir.
+
+- **DDoS Atağı Nasıl Anlaşılır?**
+
+Bir DDoS saldırısının en belirgin göstergesi, bir sitenin veya hizmetin aniden yavaşlaması veya kullanılamaz hale gelmesidir. Ancak bir dizi sebep de- trafikte bu kadar yüksek artış- benzer performans sorunları yaratabileceğinden, genellikle daha fazla araştırma yapılması gerekmektedir fakat trafik analizi araçları, bir DDoS saldırısının işaretlerinden bazılarını tespit etmenize yardımcı olabilmektedir. DDos ataklarının göstergelerinden bazıları;
+
+Tek bir IP adresinden veya IP aralığından kaynaklanan şüpheli miktarlarda trafik, cihaz türü, coğrafi konum veya web tarayıcısı sürümü gibi tek bir davranış profilini paylaşan kullanıcılardan gelen trafik akışı, tek bir sayfaya veya uç noktaya yapılan isteklerde açıklanamayan bir artış günün farklı saatlerinde ani artışlar gibi garip trafik yoğunluğudur.
+
+Farklı DDoS saldırıları, bir ağ bağlantısının çeşitli bileşenlerini hedef alabilmektedir ve farklı DDoS saldırılarının nasıl çalıştığını anlamak için, bir ağ bağlantısının nasıl yapıldığını bilmek gerekmektedir.
+İnternet üzerindeki bir ağ bağlantısı, birçok farklı bileşenden veya "katmandan" oluşur. Sıfırdan bir ev inşa etmek gibi, modeldeki her katmanın farklı bir amacı vardır.
+
+Neredeyse tüm DDoS saldırıları, trafiği olan bir hedef cihazı veya ağı ezmeyi içerirken, saldırılar farklı kategorilere ayrılabilir. Bir saldırgan, hedef tarafından alınan karşı önlemlere yanıt olarak bir veya daha fazla farklı saldırı yolu izleyebilir veya saldırı yollarını döngüye alabilir.
+
+- **DDoS atak tiplerinden bazıları;**
+ - Uygulama Katmanı Atağı,
+    OSI modelinin 7. Katmanında gerçekleşen bir atak tipidir, bu saldırıların amacı, hizmet reddi oluşturmak için hedefin kaynaklarını tüketmektir. Saldırılar, web sayfalarının sunucuda oluşturulduğu ve HTTP isteklerine yanıt olarak teslim edildiği katmanı hedefler. Kötü amaçlı trafiği, normal trafikten ayırmak zor olabileceği için 7. Katmanda gerçekleşen Uygulama Katmanı Atağı saldırılarına karşı savunma yapmak zordur.
+
+ -  HTTP Flood, 
+      Bu saldırı tipi, bir web tarayıcısında birçok farklı bilgisayarda aynı anda tekrar tekrar sayfayı yenilemeye benzemektedir. Bu sebeple çok sayıda HTTP isteği sunucuyu doldurur ve bu da hizmet reddiyle sonuçlanır.
+
+ -  SYN Flood,
+
+     Bir SYN atağı, bir kargo çalışanının kargoları arabaya depolamasına benzer. Çalışan ürünü kargo aracına yükleme talebi aldıktan sonra paketi alır ve paketin doğru hat aracına yüklendiğinden emin olur. Çalışan, daha fazla paket taşıyamayana, bunalıncaya ve talepler cevapsız kalana kadar çok daha fazla paket kontrol talebi alır. Bu saldırı, bir hedefe sahte kaynak IP adresleri içeren çok sayıda TCP "İlk Bağlantı İsteği" SYN paketi göndererek, iki bilgisayarın bir ağ bağlantısını başlattığı iletişim dizisi olan TCP el sıkışmasını kötüye kullanır. Hedef makine, her bağlantı talebine yanıt verir ve ardından el sıkışmanın hiçbir zaman gerçekleşmeyen son adımı için bekler ve hedefin kaynaklarını süreç içinde tüketir.
+
+
+
+- **Yaşanmış DDoS Saldırıları**
+
+2018 yılında yazılım geliştiricilerin sıklıkla kullandığı GitHub 1.35 Tbps boyutunda bir saldırıyla karşılaşmış ve bu saldırı 10 dakika boyunca devam etmiştir. Sistemlerinde yer alan DDoS koruma hizmeti ile bu saldırıyı başarılı bir şekilde yönetmişlerdir. Amazon Web Servisi, Şubat 2020'de devasa bir DDoS saldırısıyla vuruldu. Bu, şimdiye kadarki en güçlü DDoS saldırısıydı ve Bağlantısız Hafif Dizin Erişim Protokolü adlı bir tekniği kullanarak gerçekleştirildi. Saldırı üç gün sürdü ve inanılmaz bir şekilde saniyede 2,3 terabayta ulaştı. 20 Eylül 2016'da siber güvenlik uzmanı Brian Krebs'in blogu, o zamanlar şimdiye kadar görülmüş en büyük saldırı olan 620 Gbps'lik bir DDoS saldırısı ile saldırıya uğradı. Krebs, Temmuz 2012'den bu yana 269 DDoS saldırısı kaydetmişti, ancak bu saldırı, kendi sitesinde veya bu bağlamda internetin daha önce gördüğü ataklardan neredeyse üç kat daha büyüktü.
+
+
+- **DDoS Saldırılarından Korunmak**
+
+DDoS saldırılarından Router ya da Güvenlik Duvarı düzeyinde koruma sağlayarak korunabilmektedir. Bir sisteme yapılan saldırıların ilk karşılaştığı sistem Router’lardır. Bu sebeple saldırı sırasında gelen paketler bazında ayarlamalar yapılabilir ve güvenlik sağlanabilir olmasına rağmen çoğu router üzerinde kullanıcı bazlı ayar yapılamamaktadır. Güvenlik Duvarı düzeyine geldiğimizde ise gelen maksimum paket değer aralığını aşan IP’lerin engellenmesi yani Rate Limit yöntemi ile korunulabilmektedir. TR7 ürün ve hizmetleri arasında yer alan Firewall ve Web Uygulama Güvenlik Duvarı, kullanıcılara özelleştirilebilir ve OWAPS’ta yer verilen güvenlik tehditlerine karşı yüksek koruma sağlamakta, sistemlerinizi, uygulamalarınızı güvende tutmaktadır.
+
+

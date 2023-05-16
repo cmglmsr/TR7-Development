@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "Phishing Atağı"
+date:   2023-01-05 09:00:00
+isStaticPost: false
+language: "English"
+---
+
+![Phishing](/TR7-Website/11.jpeg)
+
+#### **Phishing Atağı**
+
+- **Phishing Atağı Nedir?**
+
+Phishing saldırı yani Türkçe haliyle kimlik avı saldırısı, genellikle oturum açma kimlik bilgileri ve kredi kartı numaraları dahil olmak üzere kullanıcı verilerini çalmak için kullanılan bir tür siber saldırısıdır. Güvenilir bir varlık kılığına giren bir saldırganın amacı, kullanıcıyı kandırarak bir e-posta veya anlık mesaj atarak ortaya çıkar. Kullanıcı kötü amaçlı bir bağlantıya tıklaması için kandırılır, bu da kötü amaçlı yazılımın yüklenmesine, bu da sistemin donmasına veya hassas bilgilerin ele geçirilmesine neden olabilir.
+
+- **Phishing Atağı Nasıl Çalışır?**
+
+Kimlik avı saldırını anlamanın sağlayan şey, mesajın aldığı biçimdir: korsanlar, bir tür güvenilir varlık, genellikle gerçek güvenilir bir kişi veya kurbanın iş yapabileceği bir şirket gibi davranır. Böylece, saldırgan kurbanları kandırarak, e-posta veya kısa mesaj gibi kötü amaçlı yazılımlarla onların sistemlerinin çökmesine ve verilerinin açığa çıkmasına sebebiyet verir. Bu, çok eski zamanlara dayanan siber saldırı türlerinden biridir ve kimlik avı mesajları ve tekniklerinin giderek daha karmaşık hale gelmesiyle hala en yaygın ve zararlı olanlardan biridir.
+
+- **Phishing Atağı Nasıl Anlaşılır?**
+
+Mesaj, genel bir e-posta alan adından gönderilmiştir. Hiçbir meşru kuruluş, '@ gmail.com' ile biten bir adresten e-posta göndermez. Bazı küçük işlemler dışında çoğu kuruluşun kendi e-posta etki alanı ve şirket hesapları olacaktır. Örneğin, Google'dan gelen yasal e-postalarda "@ google.com" yazar. Etki alanı adı (@ sembolünden sonraki bit) e-postanın görünen göndericisiyle eşleşiyorsa, mesaj muhtemelen meşrudur. Önemli ipucu: Yalnızca gönderene değil, e-posta adresine de bakılması gereklidir.
+
+- **Phishing atak tiplerinden bazıları;**
+
+- E-posta kimlik avı: Kimlik avı saldırılarının çoğu e-posta ile gönderilir. Dolandırıcı, gerçek bir organizasyonu taklit eden ve binlerce genel istek gönderen sahte bir alan adı oluşturur.
+
+- Hedefli kimlik ağı: E-postayı içeren daha karmaşık iki kimlik avı türü daha vardır. İlki, hedefli kimlik avı, belirli bir kişiye gönderilen kötü amaçlı e-postaları tanımlar. Saldırganlar, kurban hakkındaki bilgilerin bir kısmını veya tamamını ele geçirir.
+
+- Balina avı: Balina avı saldırıları üst düzey yöneticileri hedef alır. Balina avının nihai amacı diğer herhangi bir kimlik avı saldırısı ile aynıdır fakat, teknik çok daha inceliklidir. Sahte vergi iadelerini içeren dolandırıcılıklar, giderek yaygınlaşan bir balina avı türüdür. Adlar, adresler, Sosyal Güvenlik numaraları ve banka hesabı bilgileri gibi birçok yararlı bilgi içerdikleri için vergi formları saldırganlar tarafından oldukça değerlidir.
+
+- Smishing ve vishing: Hem smishing hem de vishing ile telefonlar, iletişim yöntemi olan e-postaların yerini alıyor. Smishing, saldırganların metin mesajları göndermesi demektir (içeriği e-posta kimlik avıyla aynıdır). Vishing, ise bir telefon görüşmesini içerir. Saldırganın, dolandırıcılık araştırmacısı adıyla (kart şirketinden veya bankadan) kurbana hesabının ihlal edildiğini söylemesini içerir.
+
+- Fener kimlik avı: Sosyal medyada bulunan sahte URL'ler; klonlanmış web siteleri, gönderiler; ve anlık mesajlaşma, insanları hassas bilgileri ifşa etmeye veya kötü amaçlı yazılım indirmeye ikna etmek için kullanılabilir.
+
+- **Phishing Saldırılarından Korunmak**
+
+Kimlik avı saldırısına karşı koruma için hem kullanıcılar hem de kuruluşların adımlar atmasını gerektirir. Kullanıcılar için tetikte olmak önemlidir. Sahte bir mesaj genellikle gerçek kimliğini ortaya çıkaran ince hatalar içerir. Kullanıcılar neden böyle bir e-posta aldıklarını düşünmelidir. Kuruluşlar için, kimlik avı saldırılarını engellemek için bazı koruma teknikleri uygulanabilir:
+
+- Kötü amaçlı bağlantılara tıklamalarını önlemek için çalışanları kimlik avı saldırılarını tanımaları için eğitmek gerekir. Örneğin, yönlendirildiğiniz bağlantının etki alanı sözde şirket etki alanıyla eşleşmiyorsa, bağlantı sahtedir.
+
+- Şüpheli kaynaklardan gelen e-postaları tanımak ve çalışanların gelen kutusuna ulaşmasını önlemek için birçok spam filtresi etkinleştirilebilir.
+
+- Bir kullanıcının kimlik bilgilerini tehlikeye atan bilgisayar korsanlarının her zaman erişim kazanmasını önlemek için iki faktörlü kimlik doğrulama(2FA) uygulanmalıdır. İki faktörlü kimlik doğrulama, hassas uygulamalarda oturum açarken fazladan bir doğrulama katmanı eklediği için, kimlik avı saldırılarına karşı en etkili yöntemdir.
+
+- Tarayıcı eklentileri ve uzantıları, kullanıcıların kötü amaçlı bağlantıları tıklamasını engelleyen tarayıcılarda etkinleştirilebilir.
